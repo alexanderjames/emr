@@ -1,0 +1,44 @@
+D:\SHIVAM\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+D:\SHIVAM\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+D:\SHIVAM\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.dll
+D:\SHIVAM\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.xml
+D:\SHIVAM\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\SHIVAM\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+D:\SHIVAM\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\desktopJunk\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\desktopJunk\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\desktopJunk\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\desktopJunk\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\desktopJunk\MobileDevlopement\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+D:\Documents and Settings\Dashrath\Desktop\New lats\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+D:\Documents and Settings\Dashrath\Desktop\New lats\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+D:\Documents and Settings\Dashrath\Desktop\New lats\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dashrath\Desktop\New lats\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+D:\Documents and Settings\Dashrath\Desktop\New lats\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\Ankit\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.dll
+C:\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.xml
+C:\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb

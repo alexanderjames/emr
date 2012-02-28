@@ -1,0 +1,51 @@
+﻿@model HISDemo.Models.Patient
+
+<style type="text/css">
+    #headerDiv
+    {
+        width: 100%;
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #333;
+      
+        border-bottom: 5px green solid;
+        margin-top: -11px;
+    }
+    #leftDiv
+    {
+        width: 20%;
+        float: left;
+        border-right: 1px solid #0F0;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    #rightDiv
+    {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 78%;
+        float: right;
+    }
+    #rightDiv h2
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    #rightDiv p
+    {
+        margin: 0px;
+        padding: 3px;
+    }
+</style>
+<div id="headerDiv" data-role="header" data-theme="e">
+    <div id="leftDiv">
+        <h2>@Model.Gender</h2>
+        <p>
+            @Model.DOB</p>
+    </div>
+    <div id="rightDiv">
+        <h2>@Model.LastName @Model.FirstName</h2>
+    </div>
+</div>

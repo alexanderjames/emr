@@ -1,0 +1,208 @@
+﻿@model HISDemo.Models.Patient
+<style type="text/css">
+   li p
+    {
+        font-family: Segoe UI;
+        font-size: 12px;
+        color: Gray;
+        margin: 2px 2px 2px 0px;
+        padding: 0px;
+    }
+    .data
+    {
+        position: relative;
+        float: left;
+        margin: 0 auto;
+        vertical-align: middle;
+        margin: 5px 0px 3px 3px;
+        padding: 15px;
+        border-right: 1px solid #000;
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .8);
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .8);
+    }
+    #dadmission
+    {
+        position: relative;
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+        color: Gray;
+    }
+    .header
+    {
+        padding: 3px;
+        margin:0px;
+        font-weight: bold;
+         color: Gray;
+        border-bottom: 1px solid #ccc;
+    }
+    .txtname
+    {
+        font-weight: bold;
+    }
+    .insuarance
+    {
+        -moz-column-count: 4;
+        -moz-column-gap: 2px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 2px;
+        column-count: 4;
+        column-gap: 2px;
+        text-align:left;
+        vertical-align:middle;
+       
+    }
+    
+    .insuarance p
+    {
+        margin:3px 0px;
+        color:#000;
+        font-size:14px;
+        
+        }
+        .insuarance.txt p
+        {
+            margin:3px;
+        color:#fff;
+        font-size:14px;
+        }
+        
+</style>
+<div >
+    <h2 class="header">
+        Patient Detail <span>For @Model.FirstName @Model.LastName</span><div id="dadmission">DOA  @Model.DOA</div>
+    </h2>
+    <ul data-role="listview" data-inset="true" >
+        <li class="patientlist" data-theme="e" style="padding: 15px;">
+            <div data-role="content" class="data">
+                <p>
+                    <strong>@Model.Gender</strong>
+                </p>
+                <p>
+                    <strong>@Model.Age </strong>Year</p>
+            </div>
+            <a href="#"><span class="txtname">@Model.LastName @Model.FirstName</span>
+                <p>@Model.DOA</p>
+                <p>@Model.PrimaryDiagnosis</p>
+            </a></li>
+    </ul>
+    <div style="width: 50%; float: left">
+        <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+            <li data-role="list-divider" data-theme="a" data-icon="grid"><a href="@Url.Action("Create", "Patient", new { Model = Model })" data-theme="a" data-icon="check" >Personal Details</a></li>
+            <li>
+                <p>
+                    City
+                </p>
+                <strong>@Model.City</strong> </li>
+            <li>
+                <p>
+                    State</p>
+                <strong>@Model.State</strong> </li>
+            <li>
+                <p>
+                    Country</p>
+                <strong>@Model.Country</strong> </li>
+            <li>
+                <p>
+                    Email</p>
+                <strong>@Model.Email</strong> </li>
+        </ul>
+    </div>
+    <div style="width: 49%; float: right;">
+        <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+            <li data-role="list-divider" data-theme="a" data-icon="grid"> <a href="@Url.Action("Create", "PatientAdmission", new { Model = Model })" data-theme="a" data-icon="check" >Patient Admission</a></li>
+            <li>
+                <p>
+                    Date Of Admission
+                </p>
+                <strong>@Model.DOA</strong> </li>
+            <li>
+                <p>
+                    Floor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room</p>
+                &nbsp;&nbsp;<strong>@Model.Floor</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>@Model.Room</strong>
+            </li>
+            <li>
+                <p>
+                    Admitting Hospitalist
+                </p>
+                <strong>@Model.Hospitalist</strong> </li>
+            <li>
+                <p>
+                    Primary Care Physician
+                </p>
+                <strong>@Model.PCP</strong> </li>
+        </ul>
+    </div>
+    <div data-role="content" style="text-align:right">
+   
+        <div style="width: 100%; float: left">
+            <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d">
+                <li data-role="list-divider" data-theme="a" data-icon="info">
+              <a class="insuarance txt"  href="@Url.Action("Create", "PatientInsurance", new { Model = Model })"  data-theme="a" data-icon="plus" >
+                        <p>
+                            Insuarance Plan</p>
+                        <p>
+                            Insurance Company</p>
+                        <p>
+                            Insurance Date</p>
+                        <p>
+                            Insurance Type</p>
+                           
+                    </a>
+                </li>
+                <li>
+                    <div class="insuarance">
+                        <p>
+                            RR Medicare
+                        </p>
+                        <p>
+                            Medicare
+                        </p>
+                        <p>
+                            Dec-25-2000
+                        </p>
+                        <p>
+                            Primary
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="insuarance">
+                        <p>
+                            AETNA 981107
+                        </p>
+                        <p>
+                            Aetna
+                        </p>
+                        <p>
+                            Nov-13-1998
+                        </p>
+                        <p>
+                            Secondary
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="insuarance">
+                        <p>
+                            CIGNA HEALTH PLAN
+                        </p>
+                        <p>
+                            Cigna
+                        </p>
+                        <p>
+                            May-15-2003
+                        </p>
+                        <p>
+                            Ternary
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       <a href="@Url.Action("Create", "PatientAdmission", new { Model = Model })" data-role="button" data-theme="a" data-icon="check" data-inline="true">Rounding Call</a>
+       <a href="@Url.Action("Create", "PatientBilling", new { Model = Model })" data-role="button" data-theme="a" data-icon="plus" data-inline="true">Medication</a>
+       <a href="#" data-role="button" data-theme="a" data-icon="refresh" data-inline="true">Discharge</a>
+    </div>
+</div>

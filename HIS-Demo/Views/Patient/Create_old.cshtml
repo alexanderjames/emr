@@ -1,0 +1,255 @@
+﻿@model HISDemo.Models.Patient
+@{
+    ViewBag.Title = "Create";
+}
+<style type="text/css">
+    label
+    {
+        width: 40%;
+    }
+    #red
+    {
+        color: Red;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+     
+      
+//        $("#Phone").mask("(999) 999-9999");
+//        $("#CellPhone").mask("(999) 999999");
+    });
+
+</script>
+
+
+<link href="../../css/Date%20picker/datebox.min.css" rel="stylesheet" type="text/css" />
+<script src="../../css/Date%20picker/datebox.min.js" type="text/javascript"></script>
+<script src="../../css/Date%20picker/mousewheel.js" type="text/javascript"></script>
+
+
+<link href="../../js/formDesign/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+<script src="../../js/formDesign/jquery.validationEngine.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.maskedinput-1.3.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $("#leftMenu").hide("slow");
+    $(document).ready(function (e) {
+        $("#leftMenu").hide("slow");
+        $("#lastChild").click(function () {
+
+            $("#leftMenu").hide("slow");
+            $("#Close").show("slow");
+        });
+        $("#Close").click(function () {
+
+            $("#leftMenu").show("slow");
+            $("#Close").hide("slow");
+        });
+        $(".arrowImage").each(function () {
+            $(this).click(function () {
+                $(this).parent().parent().find("div").toggle("slow");
+                $(this).attr("style", "webkit-transform: rotate(180deg)");
+            });
+        });
+    });
+    function Closechecked() {
+        var answer = confirm("Do you really want to close window ?")
+        if (answer) {
+            window.close();
+        }
+
+        return false;
+    }
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#pform").validationEngine('attach', { promptPosition: "centerRight" });
+
+    });
+</script>
+<style type="text/css">
+    .tcol
+    {
+        -moz-column-count: 2;
+        -moz-column-gap: 5pxpx;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 5pxpx;
+        column-count: 2;
+        column-gap: 5pxpx;
+    }
+</style>
+@section Header {
+    <h2>
+        Add New Patient</h2>
+    <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="home" data-theme="e" data-iconpos="notext">
+    </a>
+     <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="Logout" data-theme="e" data-iconpos="notext">
+    </a>
+}
+@section Footer {
+<div data-role="controlgroup" data-type="horizontal" data-inset="true"
+ style="text-align: center;">
+    
+        <button data-icon="plus" title="Add new patient"  data-theme="e">
+        Patient Setup
+           </button>
+        <button data-icon="grid" title="Admit patient" data-theme="c" >
+            Insurance</button>
+        <button data-icon="info" title="Medication for patient"  data-theme="c" >
+           Admission
+          </button>
+        <button data-icon="refresh" title="Add new patient" data-theme="c"> Billing
+            </button>
+            
+              <button data-icon="star" title="Add new patient" data-theme="c" > 
+             Discharge
+            </button>
+    </div>
+}
+<div data-role="content" data-theme="e">
+    <form action="/Patient/Create" id="pform" method="post">
+    <div data-role="collapsible" data-inset="true" data-collapsed="false" data-content-theme="d">
+        <h3>
+            Patient Personal Detail</h3>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="LastName">
+                Last Name <span id="red">*</span></label>
+            <input id="LastName" class="validate[required] text-input" name="LastName" type="text"
+                value="" />
+            <label for="FirstName">
+                First Name <span id="red">*</span></label>
+            <input  class="validate[required] text-input" id="FirstName" name="FirstName" type="text" value="@Model.FirstName"/>
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="SSN">
+                Social Security
+            </label>
+            <input class="validate[required,custom[integer]] text-input" id="SSN" name="SSN"
+                type="text" value="@Model.SSN" />
+             <label for="DOB">
+                Date Of Birth
+            </label>
+            <input name="DOB" value="@Model.DOB"  class="validate[required,custom[date]] text-input" id="DOB" type="date" data-role="datebox" data-options='{"mode": "flipbox"}'/>
+
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+          
+        
+        </div>
+     
+                <div data-role="fieldcontain">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <label for="Gender" class="ui-select">
+                                Gender</label>
+                            <select data-native-menu="false" id="Gender" name="Gender">
+                                <option value="">Select Your Gender</option>
+                                 <option value="Male">Male </option>
+			                     <option value="Female">Female </option>
+                                   
+                            </select>
+                          </div>
+                        <div class="ui-block-b">
+                          <label for="Status" class="ui-select">
+                                Status</label>
+                            <select data-native-menu="false" id="MaritalStatus" name="MaritalStatus">
+                                <option value="">Select Your Status</option>
+                                 <option value="Single">Single </option>
+			                     <option value="Married">Married </option>
+                                 <option value="Widow">Widow </option>
+                                 <option value="Widower">Widower </option>
+                                 <option value="Divorced">Divorced </option>
+                                 <option value="Seprated">Seprated </option>
+                              
+                            </select>
+                          </div> 
+                    </div>
+                </div>
+           
+
+         @*<div class="tcol" data-role="fieldcontain">
+          <label for="Gender">
+                    Gender</label>
+        <select data-native-menu="false">
+			<option>Choose Gender</option>
+			<option value="standard">Male </option>
+			 <option value="rush">Female </option>
+		
+		</select>
+         </div>*@
+    </div>
+    <div data-role="collapsible" data-collapsed="true" data-inset="true" data-content-theme="d">
+        <h3>
+            Patient Contact detail</h3>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="Address1">
+                Address line1
+            </label>
+            @Html.EditorFor(model => model.Address1)
+            @Html.ValidationMessageFor(model => model.Address1)
+            <label for="Address2">
+                Address line2
+            </label>
+            @Html.EditorFor(model => model.Address2)
+            @Html.ValidationMessageFor(model => model.Address2)
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="Country">
+                Country
+            </label>
+            @Html.EditorFor(model => model.Country)
+            @Html.ValidationMessageFor(model => model.Country)
+            <label for="State">
+                State</label>
+            @Html.EditorFor(model => model.State)
+            @Html.ValidationMessageFor(model => model.State)
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="City">
+                City
+            </label>
+            @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+            <label for="Zip">
+                Zip Code</label>
+            <input class="validate[required,custom[integer]] text-input" id="Zip" name="Zip" type="text" value="@Model.Zip" />
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="Phone">
+                Phone <span id="red">*</span></label>
+            <input class="validate[required,custom[phone]] text-input" id="Phone" name="Phone" type="text" value="@Model.Phone" />
+            <label for="CellPhone">
+                Cell Phone
+            </label>
+            @Html.EditorFor(model => model.CellPhone)
+            @Html.ValidationMessageFor(model => model.CellPhone)
+        </div>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="Email">
+                Email<span id="red">*</span></label>
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+            <label for="PagerEmail">
+                Pager Email <span id="red">*</span></label>
+            @Html.EditorFor(model => model.PagerEmail)
+            @Html.ValidationMessageFor(model => model.PagerEmail)
+        </div>
+
+
+
+       
+
+
+
+    </div>
+    <div class="ui-grid-c" data-content-theme="d" style="text-align:right;">
+        <input type="button" data-role="button" data-inline="true" data-theme="a" id="closewindow"
+            onclick="return Closechecked();" value="Close" />
+        <input type="submit" data-role="button" data-inline="true" data-theme="a" value="Next" />
+        <input type="reset" data-role="button" data-inline="true" data-theme="a" value="Reset" />
+    </div>
+    </form>
+</div>

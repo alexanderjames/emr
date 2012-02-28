@@ -1,0 +1,79 @@
+﻿@model HISDemo.Models.SearchPatients
+@section Header {
+    
+    <h2>
+        Hospital -EMR</h2>
+    <a href="@Url.Action("Index", "Home")" data-role="button" style="float:right;" data-icon="home" data-theme="e" data-iconpos="notext">
+    </a>
+    <a href="@Url.Action("Index")" data-role="button title="ListPatients" style="float:right;" data-icon="grid" data-theme="e"  data-iconpos="notext" >
+        </a>
+}
+<style type="text/css">
+    .leftBlock
+    {
+        width: 50%;
+        float: left;
+    }
+    .rightBlock
+    {
+        width: 48%;
+        float: left;
+        vertical-align: top;
+        margin-left: 5px;
+    }
+    label.ui-input-text 
+    {
+     font-family:Segoe UI;  
+    }
+</style>
+<div data-role="content" data-inset="true">
+   
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <ul data-role="listview" data-inset="true" data-theme="b" data-dividertheme="a">
+        <li data-role="list-divider"><h2>
+            Search Patients</h2></li>
+            <li data-theme="e">
+                <div data-role="fieldcontain">
+                    @Html.LabelFor(model => model.FirstName)
+                    @Html.EditorFor(model => model.FirstName)
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+                 <div data-role="fieldcontain">
+                     @Html.LabelFor(model => model.LastName)
+                        @Html.EditorFor(model => model.LastName)
+                        @Html.ValidationMessageFor(model => model.LastName)
+                </div>
+            </li>
+           
+            <li data-theme="c">
+                <div data-role="fieldcontain">
+                   @Html.LabelFor(model => model.HospitalNameValue)
+                        @Html.DropDownListFor(m => m.HospitalNameValue, Model.HospitalName, "Select---")
+                        @Html.ValidationMessageFor(model => model.HospitalNameValue)
+                </div>
+                <div data-role="fieldcontain">
+                    @Html.LabelFor(model => model.HospitalistNameValue)
+                        @Html.DropDownListFor(m => m.HospitalistNameValue, Model.HospitalistName, "Select---")
+                        @Html.ValidationMessageFor(model => model.HospitalistNameValue)
+                </div>
+            </li>
+            <li data-theme="e">
+                <div data-role="fieldcontain">
+                     @Html.LabelFor(model => model.PCPValue)
+                        @Html.DropDownListFor(m => m.PCPValue, Model.PCP, "Select---")
+                        @Html.ValidationMessageFor(model => model.PCPValue)
+                </div>
+                 <div data-role="fieldcontain">
+                    @Html.LabelFor(model => model.SearchCriteriaValue)
+                        @Html.DropDownListFor(m => m.SearchCriteriaValue, Model.SearchCriteria, "Select---")
+                        @Html.ValidationMessageFor(model => model.SearchCriteriaValue)
+                </div>
+            </li>
+           
+            <li> <input type="submit" value="Search" data-role="button" data-icon="search" data-iconpos="right" /></li>
+        </ul>
+    }
+
+    <div>

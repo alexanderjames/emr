@@ -1,0 +1,1143 @@
+﻿
+  <Codes>
+    <Code>
+      <Code>024                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Glanders</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>037                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Tetanus</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>050.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Alastrim</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>051.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Cowpox</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>059.21                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Tanapox</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>061                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Dengue</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>083.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Q fever</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>099.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Chancroid</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>125.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Loiasis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>133.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Scabies</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>134.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Myiasis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>136.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Ainhum</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>046.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Kuru</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>059.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Monkeypox</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>059.12                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Sealpox</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>071                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Rabies</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>18.11                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Otoscopy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>265.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Beriberi</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>265.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pellagra</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>288.66                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Bandemia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>302.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Zoophilia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>302.81                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Fetishism</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>302.82                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Voyeurism</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>307.52                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pica</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>307.6                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Enuresis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>312.33                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pyromania</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>315.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Alexia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>333.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Myoclonus</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>367.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Myopia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>368.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Diplopia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>373.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Chalazion</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>375.11                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Dacryops</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>378.41                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Esophoria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>378.42                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Exophoria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>379.31                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Aphakia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>464.4                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Croup</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>49.21                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Anoscopy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>495.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Suberosis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>520.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Anodontia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>522.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pulpitis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>529.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Glossitis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>55.11                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pyelotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>560.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Volvulus</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>569.71                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pouchitis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>607.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Priapism</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>272.7                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Lipidoses</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>276.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Acidosis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>276.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Alkalosis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>364.05                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Hypopyon</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>364.41                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Hyphema</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>63.6                                              </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Vasotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>63.73                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Vasectomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>681.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Felon</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>684                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Impetigo</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>694.4                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pemphigus</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>695.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Rosacea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>698.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Prurigo</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>70.12                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Culdotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>704.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Hirsutism</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>706.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Seborrhea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>709.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Vitiligo</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>724.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Lumbago</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>724.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Sciatica</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>727.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Bunion</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>734                                               </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Flat foot</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>743.45                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Aniridia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>744.22                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Macrotia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>744.23                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Microtia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>750.11                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Aglossia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>780.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Coma</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>781.7                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Tetany</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>782.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Edema</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>782.5                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Cyanosis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>782.61                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Pallor</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>782.62                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Flushing</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>783.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Anorexia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>784.0                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Headache</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>784.3                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Aphasia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>784.41                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Aphonia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>784.42                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Dysphonia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>784.7                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Epistaxis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>785.4                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Gangrene</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.02                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Orthopnea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.03                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Apnea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.06                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Tachypnea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.07                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Wheezing</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Stridor</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.2                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Cough</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>786.8                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Hiccough</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>787.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Heartburn</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>787.91                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Diarrhea</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>788.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Dysuria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>788.42                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Polyuria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>788.43                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Nocturia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>789.7                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Colic</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>791.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Chyluria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>791.4                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Biliuria</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>799.01                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Asphyxia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>799.02                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Hypoxemia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>799.4                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Cachexia</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>83.02                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Myotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>83.03                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Bursotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>85.0                                              </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Mastotomy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>85.6                                              </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Mastopexy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>89.11                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Tonometry</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>89.8                                              </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Autopsy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>92.14                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Bone scan</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>93.34                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Diathermy</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>99.84                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Isolation</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>995.91                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Sepsis</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>1</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>E906.0                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Dog bite</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>E906.1                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Rat bite</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>E960.1                                            </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Rape</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+    <Code>
+      <Code>V21.1                                             </Code>
+      <Code_Group_Version>9</Code_Group_Version>
+      <Code_Group>ICD-D                                             </Code_Group>
+      <Code_Description>Puberty</Code_Description>
+      <Created_By>data</Created_By>
+      <Created_Stamp>2010-02-10T00:37:46.760</Created_Stamp>
+      <Used>0</Used>
+      <Validity>0</Validity>
+    </Code>
+  </Codes>

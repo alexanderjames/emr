@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AllPatient>
+  <Patient>
+    <!--PatientDetail-->
+    <PatientID>1</PatientID>
+    <FName>James</FName>
+    <LName>Keck</LName>
+    <MName></MName>
+    <Address>1100 Lake Mary Blv.</Address>
+    <City>Miami</City>
+    <State>FL</State>
+    <Country>USA </Country>
+    <Zip>32233</Zip>
+    <Phone>4076457645</Phone>
+    <Age>25</Age>
+    <DOB>Mon, Apr 11 1:30 PM - 5:00 PM</DOB>
+    <Gender>Male</Gender>
+    <Email>Keck@gmail.com</Email>
+    <PagerEmail>Keck@gmail.com</PagerEmail>
+    <!--EndPatientDetail-->
+    <DOA>23/11/2011</DOA>
+    <Hopital>AIS</Hopital>
+    <Hospitalist>Ajay</Hospitalist>
+    <PCP>PCP1</PCP>
+    <pDiagnosis>Hedeach</pDiagnosis>
+    <Room>1</Room>
+    <Floor>2</Floor>
+    <Insuarnces>
+      
+    </Insuarnces>
+    <Billings>
+      
+    </Billings>
+  </Patient>
+  <Patient>
+    <!--PatientDetail-->
+    <PatientID>2</PatientID>
+    <FName>Barbara</FName>
+    <LName>Lewis</LName>
+    <MName></MName>
+    <Address>1100 Lake Mary Blv.</Address>
+    <City>Miami</City>
+    <State>FL</State>
+    <Country>USA </Country>
+    <Zip>32233</Zip>
+    <Phone>4076457645</Phone>
+    <Age>28</Age>
+    <DOB>Thu, Apr 14 12:00 PM - 1:00 PM</DOB>
+    <Gender>Male</Gender>
+    <Email>Lewis@gmail.com</Email>
+    <PagerEmail>Lewis@gmail.com</PagerEmail>
+    <!--EndPatientDetail-->
+    <DOA>25/11/2011</DOA>
+    <Hopital>HIS</Hopital>
+    <Hospitalist>Vijay</Hospitalist>
+    <PCP>PCP2</PCP>
+    <pDiagnosis>Chest pain</pDiagnosis>
+    <Room>2</Room>
+    <Floor>4</Floor>
+    <Insuarnces>
+    </Insuarnces>
+    <Billings>
+    </Billings>
+  </Patient>
+  <Patient>
+    <!--PatientDetail-->
+    <PatientID>3</PatientID>
+    <FName>Andrew</FName>
+    <LName>Willis</LName>
+    <MName></MName>
+    <Address>1100 Lake Mary Blv.</Address>
+    <City>Miami</City>
+    <State>FL</State>
+    <Country>USA </Country>
+    <Zip>32233</Zip>
+    <Phone>4076457645</Phone>
+    <Age>28</Age>
+    <DOB>Thu, Apr 14 12:00 PM - 1:00 PM</DOB>
+    <Gender>Male</Gender>
+    <Email>Lewis@gmail.com</Email>
+    <PagerEmail>Lewis@gmail.com</PagerEmail>
+    <!--EndPatientDetail-->
+    <DOA>25/11/2011</DOA>
+    <Hopital>HIS</Hopital>
+    <Hospitalist>Vijay</Hospitalist>
+    <PCP>PCP2</PCP>
+    <pDiagnosis>Chest pain</pDiagnosis>
+    <Room>2</Room>
+    <Floor>4</Floor>
+    <Insuarnces>
+    </Insuarnces>
+    <Billings>
+    </Billings>
+  </Patient>  
+</AllPatient>

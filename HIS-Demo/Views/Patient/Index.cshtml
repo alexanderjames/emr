@@ -1,0 +1,113 @@
+﻿@model IEnumerable<HISDemo.Models.Patient> 
+@{
+    ViewBag.Title = "Index";
+   
+}
+<style type="text/css">
+    .leftBlock
+    {
+        position: relative;
+        float: left;
+        width: auto;
+    }
+    .rightBlock
+    {
+        vertical-align: top;
+        margin: 0px auto;
+        position: inherit;
+        width: 76%;
+        float: left;
+        margin: 4px;
+        border-radius: 4px;
+        height: 100%;
+    }
+    #listContainer
+    {
+        position: relative;
+        width: 100%;
+    }
+    .patientlist p
+    {
+        font-family: Segoe UI;
+        font-size: 12px;
+        color: Gray;
+        margin: 2px 2px 2px 0px;
+        padding: 0px;
+    }
+    .footerlinks
+    {
+        -moz-column-count: 3;
+        -moz-column-gap: 2px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 2px;
+        column-count: 3;
+        column-gap: 2px;
+    }
+</style>
+<script type="text/javascript">
+
+
+
+
+
+    function GetDetail(PID) {
+        //$('#rightBlock').loader
+        $.get('/Patient/Details/' + PID, function (data) {
+
+            $('#Detail').slideUp("fast").html(data).show("slow");
+            $('#Detail').trigger("create");
+        });
+
+    }
+</script>
+@section Header {
+    <h2>
+        <a style="text-decoration: none; color: Gray;" href="#">Patients</a></h2>
+    <a href="@Url.Action("Index", "Home")" data-role="button" title="GotoHome" data-icon="home" data-theme="e" data-iconpos="notext">
+    </a><a href="#" style="text-align: right" data-role="button" data-icon="refresh"
+        title="Logout" data-theme="e" data-iconpos="notext"></a>
+}
+<div data-role="content" data-theme="" data-content-theme="">
+    <div data-role="panel" data-id="main" style="width: 100%; height: 100%;">
+        <!--All Pateint list-->
+        <div class="leftBlock" >
+            <ul id="listContainer" data-role="listview" data-inset="true" data-inline="true"
+                data-dividertheme="a" data-filter="true">
+                @for (char c = 'a'; c <= 'z'; c++)
+                {
+                    var allP = Model.Where(p => p.FirstName.StartsWith(c.ToString()) || p.FirstName.StartsWith(c.ToString().ToUpper()));
+                    if (allP != null && allP.Count() > 0)
+                    {
+                    <li data-role="list-divider">@c</li>
+                        foreach (var item in allP)
+                        {
+                    <li data-theme="c" class="patientlist">
+                        <div data-role="content" data-theme="b" style="position: relative; float: left; padding: 20px;
+                            border-right: 1px solid #000;">
+                            <p>
+                                <strong>@item.Gender</strong>
+                            </p>
+                            <p>
+                                <strong>@item.Age </strong>Year</p>
+                        </div>
+                        <a href="#" onclick="GetDetail('@item.PatientID')">@item.LastName @item.FirstName
+                            <p>@item.DOA</p>
+                            <p>@item.PrimaryDiagnosis</p>
+                        </a></li>
+                        }
+
+                    }
+
+                }
+            </ul>
+        </div>
+        <!-- Pateint Detail-->
+        <div class="rightBlock"  id="Detail">
+        </div>
+    </div>
+</div>
+
+    
+    @section Footer {
+    }
+

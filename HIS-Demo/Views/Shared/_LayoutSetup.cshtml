@@ -1,0 +1,202 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>@Page.Title</title>
+    <meta name="description" content="jQuery Mobile Site">
+    <meta name="author" content="">
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- jQuery Mobile Latest Styles -->
+    <link rel="stylesheet" href="@Url.Content("~/css/mobile.css?v=2")" />
+    @* // reference the minified version of our combined css based on whether we are in debug mode. *@
+    <script src="@Url.Content("~/js/libs/ajaxGoogle.js")"></script>
+    <script src="@Url.Content("~/js/libs/jquery.mobile-1.0b1.js")"></script>
+    <script src="@Url.Content("~/js/libs/iscroll.js")"></script>
+    <script type="text/javascript">
+        var myScroll;
+        var a = 0;
+        function loaded() {
+            setHeight(); // Set the wrapper height. Not strictly needed, see setHeight() function below.
+
+            // Please note that the following is the only line needed by iScroll to work. Everything else here is to make this demo fancier.
+            myScroll = new iScroll('wrapper', {
+                useTransform: false,
+                onBeforeScrollStart: function (e) {
+                    var target = e.target;
+                    while (target.nodeType != 1) target = target.parentNode;
+
+                    if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+                        e.preventDefault();
+                }
+            });
+        }
+
+
+        // Change wrapper height based on device orientation. Not strictly needed by iScroll, you may also use pure CSS techniques.
+        function setHeight() {
+
+            var headerH = $("#header").height(),
+		footerH = $("#footer").height(),
+		wrapperH = $(window).height() - headerH - footerH - 46;
+
+            document.getElementById('wrapper').style.height = wrapperH + 'px';
+            $("body").attr("style", "padding-bottom:0px");
+        }
+
+        // Check screen size on orientation change
+        window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
+
+        // Prevent the whole screen to scroll when dragging elements outside of the scroller (ie:header/footer).
+        // If you want to use iScroll in a portion of the screen and still be able to use the native scrolling, do *not* preventDefault on touchmove.
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+        // Load iScroll when DOM content is ready.
+        document.addEventListener('DOMContentLoaded', loaded, false);
+        //document.addEventListener('DOMContentLoaded', refreshDiv,false);
+       
+    </script>
+    <style type="text/css" media="all">
+body,ul,li {
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+body {
+	
+	     
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 100%;
+        width: 100%; /* IE10 */
+  
+
+
+		padding-bottom:44px;	/*	This prevents the scroller to lock if the user swipes down outside of the screen.
+							 	NOT needed if in home screen mode and on Android. */
+}
+
+
+
+#header a {
+	color:#f3f3f3;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+}
+
+#footer {
+	width:100%;
+	
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));;
+	padding:0;
+	border-top:1px solid #444;
+}
+
+#footer li {
+	display:block;
+	float:left;
+}
+
+#footer li {
+	width:50%;
+	text-align:center;
+}
+
+#footer a.remove {
+	border-right:1px solid #333;
+}
+
+#footer a.add {
+	border-left:1px solid #6a6a6a;
+}
+
+#footer a {
+	display:block;
+	text-decoration:none;
+	font-size:12px;
+	color:#eee;
+	line-height:24px;
+	text-shadow:0 -1px 0 #000;
+}
+
+#footer span {
+	display:block;
+	font-size:30px;
+	font-weight:bold;
+}
+
+#wrapper {
+		/* Of course you need to specify the object height */
+
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined (absolute | relative), */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+
+	width:100%;
+	
+	
+	overflow:hidden;
+}
+
+#scroller {
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+
+	float:left;
+	width:100%;
+	padding:0;
+	
+
+/*	-webkit-box-shadow:0 0 8px #555;	/* Don't use box shadows, they slow down drastically CSS animations */
+}
+
+
+</style>
+</head>
+<body>
+    <div data-role="page" data-theme="f">
+        @if (IsSectionDefined("Header"))
+        { 
+            <div id="header" data-role="header" data-theme="a">
+                @RenderSection("Header")
+                
+            </div>
+            <!-- /header -->
+        }
+        <div id="wrapper">
+            <div id="scroller">
+                <div data-role="content" data-theme="d">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+        @if (IsSectionDefined("Footer"))
+        {   
+            @RenderSection("Footer")
+            <div data-role="header" style="text-align: center;">
+                <h2>
+                    <a style="text-decoration: none; color: Gray;" href="#"><strong>2012 SHIVAM CONSULTANCY
+                        & IT SERVICES - All RIGHT RESERVED</strong></a></h2>
+            </div>
+            
+        }
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var done = false;
+    var auto_refresh = setInterval(
+        function () {
+            if (done == false) {
+                done = true;
+                window.reload();
+            }
+        }, 3000);
+  
+</script>

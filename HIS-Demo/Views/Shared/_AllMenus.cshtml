@@ -1,0 +1,41 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".images").show("slow");
+        var eT = 0;
+        var dT = 0;
+
+        $(".images li").toggle().each(function () {
+            $(this).delay(eT).show('slow');
+            eT += 200;
+        });
+    });
+</script>
+<ul class="images" style="display: none;">
+    <li><a href="@Url.Action("Index", "Patient")">
+        <img src="@Url.Content("~/img/lp.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="@Url.Action("Search", "Patient")">
+        <img src="@Url.Content("~/img/sp.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="@Url.Action("Create", "Patient")" >
+        <img src="@Url.Content("~/img/addp.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="#">
+        <img src="@Url.Content("~/img/pm.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="#">
+        <img src="@Url.Content("~/img/pb.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="#">
+        <img src="@Url.Content("~/img/pd.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="#">
+        <img src="@Url.Content("~/img/ps.jpg")" alt="Add New Patient" />
+    </a></li>
+    <li><a href="#">
+        <img src="@Url.Content("~/img/other.jpg")" alt="Add New Patient" />
+    </a></li>
+</ul>
+
+

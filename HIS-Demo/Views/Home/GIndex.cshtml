@@ -1,0 +1,414 @@
+﻿@{
+    Page.Title = "Home Page";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<style type="text/css">
+    .navbar li a
+    {
+        padding: 30px;
+        margin: 2px;
+    }
+    .changeTheme
+    {
+        padding:10px;color:Gray;float:right;background-color:Black;
+        border:2px #fff solid;
+        vertical-align:middle;
+    }
+</style>
+@*@section Header {
+<img src="../../img/logo.jpg" width="50px" height="50px" style="float:right;margin:3px 10px 3px 0px;" />
+    <h2>Hospital -EMR</h2>
+    
+            <a href="@Url.Action("About","Home")" data-role="button" style="float:right;" data-icon="grid" data-theme="e" data-iconpos="notext">
+            </a>  
+        
+      
+}*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".changeTheme").click(function () {
+            $(".appbar").show("slow");
+        });
+        $("#close").click(function () {
+            $(".appbar").hide("slow");
+        });
+        var doBind = (typeof (window.bindAppBarKeyboard) == "undefined" || window.bindAppBarKeyboard);
+
+        //remove default theme and apply applicationBarTheme
+        $("body,.tiles").removeClass("dark").removeClass("blue");
+        $(".appbar").applicationBar({ preloadAltBaseTheme: true, bindKeyboard: doBind });
+
+    });
+    </script>
+@section Footer {
+<div style="background-color:#254409;text-align:center;">
+    <img src="@Url.Content("~/img/footer.png")" />
+      <div class="changeTheme" >
+         Change Theme
+      </div>
+    </div>
+
+    <footer class="appbar" style="display:none;">
+    
+            <ul class="theme-options clear">
+                <li><a class="accent blue" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent brown" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent green" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent lime" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent magenta" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent mango" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent pink" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent purple" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent red" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent teal" href="javascript:;">&nbsp;</a> </li>
+            </ul>
+            <a href="#" id="close">Close</a>
+           @* <ul class="base-theme-options clear">
+                <li><a class="accent light" href="javascript:;">&nbsp;</a> </li>
+                <li><a class="accent dark" href="javascript:;">&nbsp;</a> </li>
+            </ul>*@
+        </footer>
+}
+@*<div data-role="navbar" data-inset="true" data-inline="true">
+    <ul class="navbar">
+        <li><a href="@Url.Action("Index", "Patient")" data-icon="grid" data-inset="true">Pateints</a></li>
+        <li><a href="@Url.Action("Search", "Patient")" data-icon="search" data-panel="main">SearchPateint</a></li>
+        <li><a href="@Url.Action("Create", "Patient")" data-icon="plus">Add Pateint</a></li>
+        <li><a href="#" data-icon="info">Rounding Calls</a></li>
+        <li><a href="#" data-icon="alert">Medication</a></li>
+        <li><a href="#" data-icon="info">Scheduling</a></li>
+    </ul>
+</div>*@
+@section Header {
+    <header id="header">
+        <h1>
+            <a href="#">Medical HealthCare</a></h1>
+
+    </header>
+}
+
+<section id="main">
+    <noscript>
+        &lt;p class="error" style="position:relative; top:65px; left:20px;"&gt;Oh No! You
+        don't have javascript enabled. You'll need javascript to use this site&lt;/p&gt;</noscript>
+    <div id="tiles" class="tiles red">
+        <h2 style="margin-top:20px;">
+            <img src="@Url.Content("~/img/favicon.ico")"  style="float:left;position:relative;height:28px;" />&nbsp;&nbsp;&nbsp;Dashboard</h2>
+        <div class="live-tile flip ha" data-direction="horizontal">
+            <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfrontY180;
+                -webkit-animation-duration: 1000ms;">
+                <a href="@Url.Action("Create", "Patient")"
+                         onclick="javascript:_gaq.push(&#39;_trackPageview&#39;,[&#39;/outgoing/www.w3schools.com/css3/&#39;]);"
+                            >
+                    <img src="../../img/plus1.png" title="CSS 3" class="full" alt="css 3">
+                </a>
+            </div>
+            <div class="flip-back ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipbackY180;
+                -webkit-animation-duration: 1000ms;">
+                <a href="@Url.Action("Create", "Patient")" onclick="javascript:_gaq.push(&#39;_trackPageview&#39;,[&#39;/outgoing/dev.w3.org/html5/&#39;]);">
+                 
+                    <img src="../../img/plus.png" alt="html5" title="HTML 5">
+                </a>
+            </div>
+        </div>
+        <div class="live-tile exclude">
+            <div >
+                <p style="margin:4px;padding:0px;">
+                    SHIVAM HealthCare, focuses on providing global solutions for hospitalist practices and other inpatient groups. 
+                    It automates daily functions of an inpatient practice while integrating additional value-added services. 
+                    <!--The combination of product technology and traditional practice services provides any inpatient practice with an enhanced set of options -->
+                    Designed to minimize challenges, decrease operating costs and improve practice revenue.</p>
+            </div>
+        </div>
+        <div class="live-tile me slide ha" data-stops="50%,100%,0px" data-stack="true" data-delay="4250">
+            <div class="slide-front ha" style="-webkit-transition-property: top; -webkit-transition-duration: 500ms;
+                top: 50%;">
+                <a href="@Url.Action("Index", "Patient")">
+                    <img src="@Url.Content("~/img/Listp.png")" alt="drew greenwell"
+                                class="full"></a></div>
+            <div class="slide-back" style="-webkit-transition-property: top; -webkit-transition-duration: 500ms;
+                top: -50%;">
+                <a class="metroBig" href="@Url.Action("Index", "Patient")">List Patients</a></div>
+        </div>
+        <div class="list-tile">
+            <ul class="flip-list">
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <p>
+                                Search Patient</p>
+                        </a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            Search Pateint
+                        </p>
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/plus.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li data-direction="horizontal" class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipbackY180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfrontY180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images//plus.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li data-direction="horizontal" class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipbackY180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfrontY180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/3.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li data-direction="horizontal" class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipbackY180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfrontY180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/4.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/5.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/6.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/7.png")" />
+                        </p>
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipfront180; -webkit-animation-duration: 1000ms;">
+                        <p>
+                            <img src="@Url.Content("~/img/images/8.png")" />
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="live-tile clear slide ha" data-stops="100%" data-delay="6000">
+            <div class="slide-front ha" style="-webkit-transition-property: top; -webkit-transition-duration: 500ms;
+                top: 0px;">
+                <a href="#" target="_blank" onclick="javascript:_gaq.push([&#39;_trackPageView&#39;, &#39;/outgoing/leapfroginteractive.com&#39;]);">
+                    <img class="full" src="@Url.Content("~/img/medication.jpg")"
+                                alt="leapfrog interactive digital agency"></a></div>
+            <div class="slide-back">
+                <p>
+                    <a href="#" target="_blank" onclick="javascript:_gaq.push([&#39;_trackPageView&#39;,&#39;/outgoing/leapfroginteractive.com&#39;]);">
+                        Medication</a> This option will give you facility for Medication for perticular
+                    Patient.<br>
+                    All senior doctor will follow.</p>
+            </div>
+        </div>
+        <div class="list-tile skills">
+            <ul class="flip-list">
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_01.png")" alt="iOS"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_01.png")" alt="JSON"
+                            class="nineTiles nineTiles1" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_02.png")" alt="X Code"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_02.png")" alt="JSON"
+                            class="nineTiles nineTiles2" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_03.png")" alt="AJAX"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_03.png")" alt="JSON"
+                            class="nineTiles nineTiles3" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_04.png")" alt="Visual Studio"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_04.png")" alt="JSON"
+                            class="nineTiles nineTiles4" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_05.png")" alt="XNA"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_05.png")" alt="JSON"
+                            class="nineTiles nineTiles5" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_06.png")" alt="CSS3"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_06.png")" alt="JSON"
+                            class="nineTiles nineTiles6" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_07.png")"
+                                alt="Silverlight"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_07.png")" alt="JSON"
+                            class="nineTiles nineTiles7" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_08.png")" alt="HTML5"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_08.png")" alt="JSON"
+                            class="nineTiles nineTiles8" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+                <li class="ha">
+                    <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                        -webkit-animation-duration: 1000ms;">
+                        <a href="#">
+                            <img src="@Url.Content("~/img/images/1_09.png")" alt="W3C"></a>
+                    </div>
+                    <div class="flip-back ha" style="margin-top: 0px; -webkit-animation-play-state: running;
+                        -webkit-animation-name: flipback180; -webkit-animation-duration: 1000ms;">
+                        <img src="@Url.Content("~/img/images/S_09.png")" alt="JSON"
+                            class="nineTiles nineTiles9" style="background-image: url(@Url.Content("~/img/Schedule.jpg"));">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="live-tile flip ha" data-delay="10000">
+            <span class="tile-title">Rounding Calls</span>
+            <div class="flip-front ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipback180;
+                -webkit-animation-duration: 1000ms;">
+                <a href="#">
+                    <img src="@Url.Content("~/img/hc11.png")" alt="SHIVAM Consultancy & Services"></a></div>
+            <div class="flip-back ha" style="-webkit-animation-play-state: running; -webkit-animation-name: flipfront180;
+                -webkit-animation-duration: 1000ms;">
+                <p>
+                    Round on Patient <a href="#"
+                        target="_self" onclick="javascript:_gaq.push([&#39;_trackPageView&#39;,&#39;/outgoing/en.wikipedia.org/wiki/Metro_Design_Language&#39;])">
+                        <br />  Rounding Calls <br /> </a> Round on patient<br /> Add ICD, CPT and other Medication 
+                </p>
+                <p style="text-align: right;">
+                    <a href="#">more info</a>
+                </p>
+            </div>
+        </div>
+        <div class="live-tile projects slide ha" data-delay="5000">
+            <span class="tile-title">My Assignments</span>
+            <div class="slide-front ha" style="-webkit-transition-property: top; -webkit-transition-duration: 500ms;
+                top: 0px;">
+                <a href="#">
+                    <img src="@Url.Content("~/img/as.png")"
+                        alt="Sitefinity controls"></a></div>
+            <div style="display: block;" class="slide-back">
+                <a href="#">
+                    <img src="@Url.Content("~/img/as1.png")" alt="Projects"></a>
+            </div>
+        </div>
+    </div>
+    <div id="twitterFeed">
+        <h2 style="margin-top:20px;">
+            News and Events</h2>
+        <div>
+            <div>
+                List content</div>
+        </div>
+    </div>
+</section>

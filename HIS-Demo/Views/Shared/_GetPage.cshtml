@@ -1,0 +1,174 @@
+﻿<style type="text/css">
+    .images
+    {
+        list-style-type: none;
+        font-family: Segoe UI;
+    }
+    
+    .images li
+    {
+        position: relative;
+        float: left;
+        border-radius: 2px;
+        border-bottom: 1px #000 ridge;
+        margin: 10px 35px 35px 0px;
+        -webkit-perspective: 0;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 0.2s;
+        width: 170px;
+        height: 105px;
+        float: left;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+    .images li:hover
+    {
+        -moz-transform: scale(1.1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        -webkit-transform: scale(1.1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        -o-transform: scale(1.1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        -ms-transform: scale(1.1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        transform: scale(1.1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        opacity: 1;
+    }
+    .images li a
+    {
+        display: block;
+        text-decoration: none;
+        color: #bfe1f1;
+        margin: 0 auto;
+    }
+    .ui-block-b ul
+    {
+        list-style: none;
+    }
+    .ui-block-b ul li
+    {
+        font-size: 18px;
+        line-height: 20px;
+        text-decoration: none;
+        color: Green;
+        -webkit-perspective: 0;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 0.2s;
+        width: 105px;
+        height: 105px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+    .ui-block-b ul li a
+    {
+        text-decoration: none;
+        font-size: 20px;
+        color: White;
+    }
+    .images p
+    {
+        border-top: 2px solid #333;
+        vertical-align: bottom;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+    }
+    
+    .images p:hover
+    {
+        border-top: 2px solid gray;
+        vertical-align: bottom;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        color: Red;
+    }
+    
+    .ui-block-b ul li:hover
+    {
+        -moz-transform: rotate(-5deg);
+        -moz-box-shadow: 10px 10px 20px #000000;
+        -webkit-transform: rotate(-5deg);
+        -webkit-box-shadow: 10px 10px 20px #000000;
+        transform: rotate(-5deg);
+        box-shadow: 10px 10px 20px #000000;
+        background-color: Red;
+        opacity: 1;
+    }
+    #header
+    {
+        position: relative;
+        line-height: 45px;
+        display: block;
+       /* padding: 10px 0px 20px 0px;*/
+        font-size: 250%;
+        text-align: center;
+        color: #FFF;
+    }
+</style>
+@if (jQueryMobileTemplate.MvcApplication.UserLogin == true)
+{
+    @Html.Partial("_LoginView");
+}
+@if (jQueryMobileTemplate.MvcApplication.UserLogin == false)
+{
+    @Html.Partial("_AllMenus");
+}
+<style type="text/css">
+.number
+{
+	width:50px; height:50px;position:relative;float:left;margin:0px;padding:0px;background-color:#FFFFFF;border-radius:50px; vertical-align:middle;
+}
+#span
+{ width:35px;
+height:35px;
+font-size:25px;font-weight:bold;
+vertical-align:middle;
+text-align:center;
+background-color:green;
+margin:0px;
+padding:0px;
+border-radius:25px;
+position:relative;
+float:left;
+margin-left:8px;
+margin-top:7.3px;
+color:#FFFFFF;
+
+
+
+	}
+	
+	#border
+	{
+		border-bottom:4px solid white; 
+		
+		 
+		}
+	
+	
+</style>
+<div style="display: inline-block; margin-left: 40px;">
+   
+    <p style="display: inline-block; color: Gray;">
+       
+        <div data-role="content">
+            <div class="ui-grid-b">
+      <div class="ui-block-a">
+		<h2> <div class="number"><Span id="span">1</Span></div> <span id="border">Some Header</span> </h2>
+      <p style="padding:10px;padding-left:10px;position:relative; border-right: 2px dashed white;">Some text some text Some text some text Some text some text Some text some text Some text some text Some text some text </p>
+      </div>
+      <div " class="ui-block-b"><h2> <div class="number"><Span id="span">2</Span></div><span id="border">Some Header</span> </h2>
+      <p style="padding:10px;padding-left:10px;position:relative; border-right: 2px dashed white;">Some text some text Some text some text Some text some text Some text some text Some text some text Some text some text </p></div>
+      <div class="ui-block-c"><h2> <div class="number"><Span id="span">3</Span></div><span id="border">Some Header</span> </h2>
+      <p style="padding:10px;padding-left:10px;position:relative; ">Some text some text Some text some text Some text some text Some text some text Some text some text Some text some text </p></div>
+    </div>
+        </div>
+    </p>
+</div>

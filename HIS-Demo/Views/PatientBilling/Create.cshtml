@@ -1,0 +1,387 @@
+﻿@*@model HISDemo.Models.Patient
+@{
+    ViewBag.Title = "Create";
+}
+<style type="text/css">
+    label
+    {
+        width: 40%;
+    }
+    #red
+    {
+        color: Red;
+    }
+</style>
+<link href="../../js/formDesign/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+<script src="../../js/formDesign/jquery.validationEngine.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.maskedinput-1.3.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#leftMenu").hide("slow");
+    $(document).ready(function (e) {
+        $("#leftMenu").hide("slow");
+        $("#lastChild").click(function () {
+
+            $("#leftMenu").hide("slow");
+            $("#Close").show("slow");
+        });
+        $("#Close").click(function () {
+
+            $("#leftMenu").show("slow");
+            $("#Close").hide("slow");
+        });
+        $(".arrowImage").each(function () {
+            $(this).click(function () {
+                $(this).parent().parent().find("div").toggle("slow");
+                $(this).attr("style", "webkit-transform: rotate(180deg)");
+            });
+        });
+    });
+    function Closechecked() {
+        var answer = confirm("Do you really want to close window ?")
+        if (answer) {
+            window.close();
+        }
+
+        return false;
+    }
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#pform").validationEngine('attach', { promptPosition: "centerRight" });
+
+    });
+</script>
+<style type="text/css">
+    .tcol
+    {
+        -moz-column-count: 2;
+        -moz-column-gap: 5pxpx;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 5pxpx;
+        column-count: 2;
+        column-gap: 5pxpx;
+    }
+</style>
+@section Header {
+    <h2>
+        Patient Billing Detail</h2>
+    <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="home" data-theme="e" data-iconpos="notext">
+    </a><a href="@Url.Action("Index", "Home")" data-role="button" data-icon="logout" data-theme="e" data-iconpos="notext">
+    </a>
+}
+@section Footer {
+}
+
+    <div data-role="collapsible" data-inset="true" data-collapsed="false" data-content-theme="d">
+        <h3>
+            Patient Billing Detail</h3>
+        <div class="tcol" data-role="fieldcontain">
+            <label for="LastName">
+                ADD CPT</label>
+            @Html.EditorFor(model => model.CPT)
+            @Html.ValidationMessageFor(model => model.CPT)
+            <label for="FirstName">
+                ADD ICD</label>
+            @Html.EditorFor(model => model.ICD)
+            @Html.ValidationMessageFor(model => model.ICD)
+        </div>
+    </div>
+    <div class="ui-grid-c" data-content-theme="d" style="text-align: right;">
+        <input type="button" data-role="button" data-inline="true" data-theme="a" id="closewindow"
+            onclick="return Closechecked();" value="Close" />
+        <input type="submit" data-role="button" data-inline="true" data-theme="a" value="Next" />
+        <input type="reset" data-role="button" data-inline="true" data-theme="a" value="Reset" />
+    </div>
+    </form>
+</div>
+*@
+
+
+
+
+
+
+@*--------------------------------------------------------New--------------------------------------------*@
+
+
+
+@model HISDemo.Models.Patient
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutSetup.cshtml";
+   
+}
+
+<style type="text/css">
+    label
+    {
+        width: 40%;
+    }
+    #red
+    {
+        color: Red;
+    }
+</style>
+<link href="../../js/formDesign/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+<script src="../../js/formDesign/jquery.validationEngine.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="../../js/formDesign/jquery.maskedinput-1.3.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#leftMenu").hide("slow");
+    $(document).ready(function (e) {
+        $("#leftMenu").hide("slow");
+        $("#lastChild").click(function () {
+
+            $("#leftMenu").hide("slow");
+            $("#Close").show("slow");
+        });
+        $("#Close").click(function () {
+
+            $("#leftMenu").show("slow");
+            $("#Close").hide("slow");
+        });
+        $(".arrowImage").each(function () {
+            $(this).click(function () {
+                $(this).parent().parent().find("div").toggle("slow");
+                $(this).attr("style", "webkit-transform: rotate(180deg)");
+            });
+        });
+    });
+    function Closechecked() {
+        var answer = confirm("Do you really want to close window ?")
+        if (answer) {
+            window.close();
+        }
+
+        return false;
+    }
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#pform").validationEngine('attach', { promptPosition: "centerRight" });
+
+    });
+</script>
+<style type="text/css">
+    #messageBox
+    {
+        padding: 5px;
+        display: none;
+        top: 50%;
+        left: 50%;
+    }
+  .ui-menu
+  {
+      width:20%;
+      position:absolute;
+      border:1px solid green;
+       list-style-type:square;
+       background:#fff;
+  }
+      
+.ui-menu-item
+{
+    padding:4px;
+    margin:0px;
+    position:relative;
+    color:Gray;
+    border-bottom:1px solid #00f;
+}
+.ui-menu-item:hover
+{
+    border:1px solid #000;
+    background:#000;
+}
+
+</style>
+<script src="../../js/position.js" type="text/javascript"></script>
+<script src="../../js/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="../../js/jquery.ui.autocomplete.js" type="text/javascript"></script>
+<script src="../../js/core.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    function log( message ) {
+			$( "<div/>" ).text( message ).prependTo( "#log" );
+			$( "#log" ).scrollTop( 0 );
+		}
+        $.ajax({
+            url: "@Url.Content("~/Content/Contries.xml")",
+            dataType: "xml",
+            success: function (xmlResponse) {
+                var data = $("Code", xmlResponse).map(function () {
+                    return {
+                        value: $.trim($("Code_Description", this).text()) + ",[ " +
+							($.trim($("Code", this).text())+"]" || "(unknown Code)"),
+                        id: $("Code", this).text()
+                    };
+                }).get();
+                $("#PrimaryDiagnosis").autocomplete({
+                    source: data,
+                    minLength: 0,
+                    select: function (event, ui) {
+                        log(ui.item ?
+							"Selected: " + ui.item.value + ", Code: " + ui.item.id :
+							"Nothing selected, input was " + this.value);
+                    }
+                });
+            }
+        });
+    });
+    
+    
+   
+</script>
+
+
+
+<style type="text/css">
+  #ui-block-a
+  {
+     width:25%; margin-left:10%;
+      }
+      
+       #ui-block-b
+       {
+           width:60%
+           
+           }
+           #top
+           {
+               margin-top:2%;
+             
+               
+               }
+               
+               #border
+               {
+                     border: 1px solid yellow;
+                     border-radius:6px;
+                   
+                     padding:12px;
+                   }
+
+</style>
+
+@section Header {
+      <h2>
+         Patient Admission</h2>
+    <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="home" data-theme="e" data-iconpos="notext">
+    </a>
+     <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="grid" data-theme="e" data-iconpos="notext">
+    </a>
+    <div data-role="navbar" data-transition="flip" data-iconpos="top" data-inset="true">
+                    <ul>
+                        <li><a href="@Url.Action("Create", "Patient", new { Model = Model })" data-theme="a" data-icon="grid" >
+                            PatientSetup</a></li>
+                        <li><a href="@Url.Action("Create", "PatientAdmission", new { Model = Model })" data-theme="a" data-icon="plus" >
+                            PatientAdmission</a></li>
+                        <li><a href="@Url.Action("Create", "PatientInsurance", new { Model = Model })" data-theme="a" data-icon="refresh" >
+                            Insurance</a></li>
+                        <li><a href="@Url.Action("Create", "PatientBilling", new { Model = Model })" data-theme="a" data-icon="check" >
+                            Billing</a></li>
+                    </ul>
+                </div>
+}
+@section Footer {
+ 
+    }
+<div data-role="content" data-theme="e">
+    <form action="/PatientBilling/Create" id="pform" method="post">
+    <style type="text/css">
+    #headerDiv
+    {
+        width: 100%;
+        height:100px;
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #333;
+     
+        border-bottom: 5px green solid;
+        margin-top: -11px;
+    }
+    #leftDiv
+    {
+        width: 20%;
+        float: left;
+        border-right: 1px solid #0F0;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    #rightDiv
+    {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 78%;
+        float: right;
+    }
+    #rightDiv h2
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    #rightDiv p
+    {
+        margin: 0px;
+        padding: 3px;
+    }
+</style>
+<div id="headerDiv" data-role="header" data-theme="e">
+    <div id="leftDiv">
+        <h2>@Model.Gender</h2>
+        <p>
+            27 Yr.</p>
+    </div>
+    <div id="rightDiv">
+        <h2>@Model.LastName @Model.FirstName</h2>
+    </div>
+</div>
+   
+
+
+      <div id="border">
+                
+
+                       <div id="top" class="ui-grid-a">
+                        <div id="ui-block-a" class="ui-block-a">
+                            Add CPT
+                        </div>
+                        <div id="ui-block-b" class="ui-block-b">
+                             @Html.EditorFor(model => model.CPT)
+                             @Html.ValidationMessageFor(model => model.CPT)
+                        </div>
+
+
+
+                    </div>
+
+
+                     <div id="top" class="ui-grid-a">
+                        <div id="ui-block-a" class="ui-block-a">
+                            Add ICD
+                        </div>
+                        <div id="ui-block-b" class="ui-block-b">
+                             @Html.EditorFor(model => model.ICD)
+                             @Html.ValidationMessageFor(model => model.ICD)
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+ 
+    <div class="ui-grid-c" data-content-theme="d" style="text-align: right;">
+
+     <input type="reset" data-role="button" data-inline="true" data-theme="a" value="Reset" />
+        <input type="button" data-role="button" data-inline="true" data-theme="a" id="closewindow"
+            onclick="return Closechecked();" value="Close" />
+        <input type="submit" data-role="button" data-inline="true" data-theme="a" value="Save & Next " />
+       
+    </div>
+    </form>
+</div>
+
