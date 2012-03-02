@@ -21,13 +21,14 @@
         $("#vtabs4").jVertTabs({ equalHeights: true });
 
         index = 0;
-        var count = 1;
+        var count = 2;
 
 
         $("input[id^=next]").each(function (index) {
             $(this).click(function () {
                 $("#0").click(function () { index = 0; index++; })
                 $("#1").click(function () { index = 1; index++; })
+                $("#2").click(function () { index = 2; index++; })
                 if (index > count) {
                     index = 0;
 

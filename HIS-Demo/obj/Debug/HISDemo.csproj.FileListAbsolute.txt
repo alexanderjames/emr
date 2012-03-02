@@ -45,3 +45,10 @@ C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
 C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
 C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
 C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\EMR\HIS-Demo\bin\HIS-Demo.dll
+C:\EMR\HIS-Demo\bin\HIS-Demo.pdb
+C:\EMR\HIS-Demo\bin\System.Web.Mvc.dll
+C:\EMR\HIS-Demo\bin\System.Web.Mvc.xml
+C:\EMR\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\EMR\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\EMR\HIS-Demo\obj\Debug\HIS-Demo.pdb
