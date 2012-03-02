@@ -28,48 +28,44 @@ namespace HISDemo.Controllers
         }
 
         //
-        // GET: /PatientAdmission/Create
+        //// GET: /PatientAdmission/Create
 
         public ActionResult Create(Patient patient)
         {
-
-
-          //  return View(Patients.All.Last());
-            if (!(patient.LastName == null || patient.LastName == "" || patient.LastName == string.Empty))
-                return View(patient);
-            else 
-            {
-                return RedirectToAction("Create", "Patient", patient);
-            }
-            //else{
-            //    return RedirectToAction("Create", "Patient", patient);
-            //   // return View(Patients.All.Last());
-            //}
+            return View(jQueryMobileTemplate.MvcApplication.ActivePatient);
         }
 
 
-        
+
         // POST: /PatientAdmission/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection, Patient Patient)
+        public JavaScriptResult Create(FormCollection collection, Patient patient)
         {
             try
             {
                 // TODO: Add insert logic here
 
 
-                var newpateint=Patients.All.Where(p => p.PatientID == Patient.PatientID).FirstOrDefault();
-                if (newpateint != null)
+                //Patients.All.Last();
+                patient.PatientID = jQueryMobileTemplate.MvcApplication.ActivePatient.PatientID;
+                UpdateModel(jQueryMobileTemplate.MvcApplication.ActivePatient);
+                jQueryMobileTemplate.MvcApplication.ActivePatient.PatientID = patient.PatientID;
+                var pa = Patients.All.Where(p => p.PatientID == patient.PatientID).FirstOrDefault();
+                if (pa == null)
                 {
-                    Patient.ToString().ToArray().CopyTo(newpateint.ToString().ToArray(),0);
-                    MvcApplication.ActivePatient = newpateint;
+                    Patients.All.Add(jQueryMobileTemplate.MvcApplication.ActivePatient);
                 }
-                return RedirectToAction("Create", "PatientInsurance",Patient);
+                else
+                {
+                    UpdateModel(pa);
+                    pa.PatientID = patient.PatientID;
+                }
+                return JavaScript("window.location.href='/PatientInsurance/Create/'");
             }
             catch
             {
-                return View();
+                return JavaScript("location.reload(true)");
             }
         }
 

@@ -18,6 +18,11 @@ namespace jQueryMobileTemplate
         public static SearchPatients SearchData = new SearchPatients();
         public static Boolean UserLogin = true;
         public static Patient ActivePatient = new Patient();
+        public static Boolean IsNewPatient = false;
+        public static string HeaderFiles; 
+
+       // public static bool HeaderFiles; 
+
         // Debug override option. 
         // TODO: pull from appsettings?
         private static bool? _isDebug;

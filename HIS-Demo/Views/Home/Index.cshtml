@@ -4,14 +4,12 @@
     
 }
 @section Header {
-   
-      <h2><a style="text-decoration:none; color:Gray;" href="#">SHIVAM Healthcare Management System</a></h2>
-  
+    @Html.Partial("loginInfo")
+    <h2>
+        <a style="text-decoration: none; color: White; font-size: 20px; font-weight: normal;"
+            href="#">EMR - Healthcare Management System</a></h2>
 }
 @section Footer {
-
-
-
 }
 <div class="ui-grid-a">
     <div class="ui-block-a" style="width: 70%;">
@@ -19,14 +17,19 @@
     </div>
     <div class="ui-block-b" style="width: 30%; margin-top: 10px;">
         <ul>
-            <li><a href="#">
-                <img src="@Url.Content("~/img/conatct.jpg")" alt="Contant Us" title="Contact Us" /></a></li>
-            <li><a href="#">
-                <img src="@Url.Content("~/img/ourweb.jpg")" alt="Visit Our Website" title="Visit Our Website" /></a></li>
-            <li><a href="#">
-                <img src="@Url.Content("~/img/about.jpg")" alt="About Us" title="About Us" /></a></li>
-            <li><a href="#">
-                <img src="@Url.Content("~/img/pnp.jpg")" alt="Privacy & policy" title="Privacy & policy" /></a></li>
+            <li><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"
+                id="contact" title="_ContactUs" class="indexlinks">
+                <img src="@Url.Content("~/Images/conatct.jpg")" alt="Contant Us" title="Contact Us" /></a></li>
+            <li><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"
+                id="Visit website" title="_visit" class="indexlinks">
+                <img src="@Url.Content("~/Images/ourweb.jpg")" alt="Visit Our Website" title="Visit Our Website"  /></a></li>
+            <li><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"
+                id="About" title="_About" class="indexlinks">
+                <img src="@Url.Content("~/Images/about.jpg")" alt="About Us" title="About Us" /></a></li>
+            <li><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"
+                title="_privacy" class="indexlinks">
+                <img src="@Url.Content("~/Images/pnp.jpg")" alt="Privacy & policy"   id="Privacy" /></a></li>
         </ul>
     </div>
 </div>
+@Html.Partial("_PagesContainer")

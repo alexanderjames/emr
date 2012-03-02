@@ -14,34 +14,37 @@ namespace HISDemo.Controllers
 
         public ActionResult Create(Patient patient)
         {
-
-            //return View(Patients.All.Last());
-
-           // if (!(patient.MRN == null || patient.MRN == "" || patient.MRN == string.Empty))
-                return View(patient);
-            //else
-            //    return RedirectToActionPermanent("Create", "PatientAdmission", patient);
-
-
+            return View(jQueryMobileTemplate.MvcApplication.ActivePatient);
         }
 
 
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection, Patient Patient)
+        public JavaScriptResult Create(FormCollection collection, Patient patient)
         {
             try
             {
                 // TODO: Add insert logic here
+                patient.PatientID = jQueryMobileTemplate.MvcApplication.ActivePatient.PatientID;
+                UpdateModel(jQueryMobileTemplate.MvcApplication.ActivePatient);
+                jQueryMobileTemplate.MvcApplication.ActivePatient.PatientID = patient.PatientID;
+                var pa = Patients.All.Where(p => p.PatientID == patient.PatientID).FirstOrDefault();
+                if (pa == null)
+                {
+                    Patients.All.Add(jQueryMobileTemplate.MvcApplication.ActivePatient);
+                }
+                else
+                {
+                    UpdateModel(pa);
+                    pa.PatientID = patient.PatientID;
+                }
+                
 
-                Patients.All.Add(Patient);
-
-
-                return RedirectToAction("Create", "PatientBilling");
+                return JavaScript("window.location.href='/PatientBilling/Create/'");
             }
             catch
             {
-                return View();
+                return JavaScript("location.reload(true)");
             }
         }
 

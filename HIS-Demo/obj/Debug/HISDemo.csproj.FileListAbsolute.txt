@@ -35,10 +35,13 @@ C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-De
 C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
 C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
 C:\Users\ABC\Desktop\Ankit\23 feb\HIS-Demo\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
-C:\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
-C:\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
-C:\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.dll
-C:\HIS-Demo\HIS-Demo\bin\System.Web.Mvc.xml
-C:\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
-C:\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
-C:\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+D:\Documents and Settings\Dashrat\Desktop\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+D:\Documents and Settings\Dashrat\Desktop\HIS-Demo\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+D:\Documents and Settings\Dashrat\Desktop\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dashrat\Desktop\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+D:\Documents and Settings\Dashrat\Desktop\HIS-Demo\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb
+C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\bin\HIS-Demo.dll
+C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\bin\HIS-Demo.pdb
+C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HISDemo.csprojResolveAssemblyReference.cache
+C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.dll
+C:\Users\ABC\Desktop\HIS-Demo\HIS-Demo\obj\Debug\HIS-Demo.pdb

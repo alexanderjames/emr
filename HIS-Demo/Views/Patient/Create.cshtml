@@ -1,182 +1,22 @@
 ﻿@model HISDemo.Models.Patient
 @{
-    ViewBag.Title = "Create1";
+    // ViewBag.Title = "Patient";
     Layout = "~/Views/Shared/_LayoutSetup.cshtml";
-    //DateTime now = DateTime.Today;
-
-    //DateTime birthday = Convert.ToDateTime("2000/05/05");
-    //int age = now.Year - birthday.Year;
-    //if (now < birthday.AddYears(age))
-    //{ age--; };
-    //ViewBag.age = age;
+    jQueryMobileTemplate.MvcApplication.HeaderFiles = "Patient";
 
 }
-<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/PS_newstyle/css/jquery-jvert-tabs-1.1.4.css")" />
-<script type="text/javascript" src="@Url.Content("~/Content/PS_newstyle/js/jquery-jvert-tabs-1.1.4.js")"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#vtabs4").jVertTabs();
-    });
-</script>
-@{
-    ViewBag.Title = "Create";
+@section Header{
+    @Html.Partial("loginInfo")
+    <h2>
+        <a style="text-decoration: none; color: White; font-size: 20px; font-weight: normal;"
+            href="#">New Patient</a></h2>
+    <a id="HomeLink" href="#" title="@Url.Action("Index", "Home")"  data-icon="home"
+    data-theme="b" data-iconpos="notext" style="float:right;"></a>
 }
-@*<style type="text/css">
-    label
-    {
-        width: 40%;
-    }
-    #red
-    {
-        color: Red;
-    }
-</style>*@ @*<script type="text/javascript">
-    $(document).ready(function () {
-
-
-        $("#Phone").mask("(999) 999-9999");
-        $("#CellPhone").mask("(999) 999999");
-        $("#SSN").mask("999-999-999");
-    });
-
-</script>*@
-<link href="../../css/Date%20picker/datebox.min.css" rel="stylesheet" type="text/css" />
-<script src="../../css/Date%20picker/datebox.min.js" type="text/javascript"></script>
-<script src="../../css/Date%20picker/mousewheel.js" type="text/javascript"></script>
-<link href="../../js/formDesign/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
-<script src="../../js/formDesign/jquery.validationEngine.js" type="text/javascript"></script>
-<script src="../../js/formDesign/jquery.validationEngine-en.js" type="text/javascript"></script>
-<script src="../../js/formDesign/jquery.maskedinput-1.3.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $("#leftMenu").hide("slow");
-    $(document).ready(function (e) {
-        $("#leftMenu").hide("slow");
-        $("#lastChild").click(function () {
-
-            $("#leftMenu").hide("slow");
-            $("#Close").show("slow");
-        });
-        $("#Close").click(function () {
-
-            $("#leftMenu").show("slow");
-            $("#Close").hide("slow");
-        });
-        $(".arrowImage").each(function () {
-            $(this).click(function () {
-                $(this).parent().parent().find("div").toggle("slow");
-                $(this).attr("style", "webkit-transform: rotate(180deg)");
-            });
-        });
-    });
-    function Closechecked() {
-        var answer = confirm("Do you really want to close window ?")
-        if (answer) {
-            window.close();
-        }
-
-        return false;
-    }
-</script>
-<script type="text/javascript">
-    jQuery(document).ready(function () {
-        jQuery("#pform").validationEngine('attach', { promptPosition: "centerRight" });
-
-    });
-</script>
-<style type="text/css">
-    #ui-block-a
-    {
-        width: 25%;
-        margin-left: 10%;
-        white-space: nowrap;
-    }
-    
-    #ui-block-b
-    {
-        width: 60%;
-    }
-    #top
-    {
-        margin-top: 2%;
-    }
-    
-    #border
-    {
-        padding: 12px;
-    }
-    #messageBox
-    {
-        padding: 5px;
-        display: none;
-        top: 50%;
-        left: 50%;
-    }
-    .ui-menu
-    {
-        width: 20%;
-        position: absolute;
-        border: 1px solid green;
-        list-style-type: square;
-        background: #fff;
-    }
-    
-    .ui-menu-item
-    {
-        padding: 4px;
-        margin: 0px;
-        position: relative;
-        color: Gray;
-        border-bottom: 1px solid #00f;
-    }
-    .ui-menu-item:hover
-    {
-        border: 1px solid #000;
-        background: #000;
-    }
-    
-    
-    #infoouter
-    {
-        width: 99.7%;
-        margin: 0px;
-        padding: 0px;
-        background-color: #666;
-        height: 80px;
-        margin: 3px;
-        color: #fff;
-        font-family: "Segoe UI";
-        border-radius: 3px;
-        border: 1px solid #ccc;
-        margin-top: -15px;
-        margin-bottom: -1px;
-        border-bottom: 5px solid #999;
-    }
-    #leftinner
-    {
-        width: 6.52%;
-        margin: 0px;
-        padding: 0px;
-        border-right: #FF0000 thin;
-        float: left;
-        text-align: center;
-        vertical-align: auto;
-        position: absolute;
-        border-right: 1px solid #ccc;
-        position: inherit;
-    }
-    
-    #rightinner
-    {
-        width: 80%;
-        margin: 0px;
-        padding: 0px;
-        float: left;
-        position: inherit;
-        height: inherit;
-        margin-left: 10px;
-        text-indent: 20px;
-    }
-</style>
+@section Script
+{
+    @Html.Partial("_Patient")
+}
 <script src="../../js/position.js" type="text/javascript"></script>
 <script src="../../js/jquery.ui.widget.js" type="text/javascript"></script>
 <script src="../../js/jquery.ui.autocomplete.js" type="text/javascript"></script>
@@ -214,81 +54,25 @@
     
    
 </script>
-<style type="text/css">
-    #ui-block-a
-    {
-        width: 25%;
-        margin-left: 10%;
-    }
-    
-    #ui-block-b
-    {
-        width: 60%;
-    }
-    #top
-    {
-        margin-top: 2%;
-    }
-    
-    #border
-    {
-    }
-    #red
-    {
-        color: Red;
-        margin-left: 2px;
-    }
-</style>
-@*@section Footer {
-<div data-role="header"  data-theme="a" data-content-theme="a" id="footer" style="text-align: center;">
-                <h2>
-                    <a style="text-decoration: none; color: Gray;" href="#">2012 SHIVAM CONSULTANCY & IT
-                        SERVICES - All RIGHT RESERVED</a></h2>
-                <a href="@Url.Action("index", "Patient")" data-role="button" data-icon="star" data-theme="e" data-iconpos="notext">
-                </a><a href="@Url.Action("index", "Patient")" data-role="button" data-icon="refresh" data-theme="e" data-iconpos="notext">
-                </a>
-            </div>
-}
-*@
-
-@section Header {
-    <h2>
-        <a style="text-decoration: none; color: Gray;" href="#">Add New Patient</a></h2>
-    <a href="@Url.Action("Index", "Home")" data-role="button" data-icon="home" data-theme="e" data-iconpos="notext">
-    </a><a href="@Url.Action("Index", "Home")" data-role="button" data-icon="grid" data-theme="e" data-iconpos="notext">
-    </a>
-    <div data-role="navbar" data-transition="flip" data-iconpos="top" data-inset="true">
-                    <ul>
-                        <li><a href="@Url.Action("Create", "Patient", new { Model = Model })" data-theme="a" data-icon="grid" >
-                            PatientSetup</a></li>
-                        <li><a href="@Url.Action("Create", "PatientAdmission", new { Model = Model })" data-theme="a" data-icon="plus" >
-                            PatientAdmission</a></li>
-                        <li><a href="@Url.Action("Create", "PatientInsurance", new { Model = Model })" data-theme="a" data-icon="refresh" >
-                            Insurance</a></li>
-                        <li><a href="@Url.Action("Create", "PatientBilling", new { Model = Model })" data-theme="a" data-icon="check" >
-                            Billing</a></li>
-                    </ul>
-                </div>
-}
-
-@section Footer {
+@using (Ajax.BeginForm("Create", "Patient", new AjaxOptions()
+{
+    UpdateTargetId = "Content",
+    HttpMethod = "Post",
+    OnComplete = "Send"
 
 
-
-}
-
-<form action="/Patient/Create" id="pform" method="post" >
+}, new { id = "pform" }))
+{
 <div id="vtabs4">
     <div>
         <ul>
-            <li><a href="#vtabs-content-a">Demographic </a></li>
+            <li><a href="#vtabs-content-a">Demographic</a></li>
             <li><a href="#vtabs-content-b">Contact </a></li>
             <li><a href="#vtabs-content-c">Other </a></li>
         </ul>
     </div>
     <div>
         <div id="#vtabs-content-a">
-            
             <div id="border">
                 <div class="ui-grid-a">
                     <div id="ui-block-a" class="ui-block-a">
@@ -296,7 +80,7 @@
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
                         <input id="LastName" class="validate[required] text-input" name="LastName" type="text"
-                            value="" />
+value="@Model.LastName" />
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -304,7 +88,8 @@
                         First <span id="red">*</span>
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input  class="validate[required] text-input" id="FirstName" name="FirstName" type="text" value="@Model.FirstName"/>
+                        <input class="validate[required] text-input" id="FirstName" name="FirstName" type="text"
+value="@Model.FirstName"/>
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -321,7 +106,9 @@
                         DOB <span id="red">*</span>
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input name="DOB" value="@Model.DOB"  class="" id="DOB" type="date" data-role="datebox" data-options='{"mode": "flipbox"}'/>
+                        <input
+name="DOB" value="@Model.DOB" class="" id="DOB" type="date" data-role="datebox"
+data-options='{"mode": "flipbox"}'/>
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -365,7 +152,8 @@
                         Country
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input class="text-box single-line" id="Country" name="Country" type="text" value="@Model.Country" />
+                        <input class="text-box single-line"
+id="Country" name="Country" type="text" value="@Model.Country" />
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -373,7 +161,9 @@
                         State<span id="red">*</span>
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input class="validate[required] text-input" id="State" name="State" type="text" placeholder="Type First Letter Of Your State" value="@Model.State" />
+                        <input class="validate[required]
+text-input" id="State" name="State" type="text" placeholder="Type First Letter Of
+Your State" value="@Model.State" />
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -390,7 +180,8 @@
                         Zipcode <span id="red">*</span>
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input class="validate[required,custom[integer]] text-input" id="Zip" name="Zip" type="text" value="@Model.Zip" />
+                        <input class="validate[required,custom[integer]] text-input" id="Zip" name="Zip"
+type="text" value="@Model.Zip" />
                     </div>
                 </div>
                 <div id="top" class="ui-grid-a">
@@ -407,66 +198,12 @@
                         Email <span id="red">*</span>
                     </div>
                     <div id="ui-block-b" class="ui-block-b">
-                        <input class="validate[required,custom[email]] text-input" id="Email" name="Email" type="text" value="@Model.Email" />
+                        <input
+class="validate[required,custom[email]] text-input" id="Email" name="Email" type="text"
+value="@Model.Email" />
                     </div>
                 </div>
             </div>
-            @*<div >
-        <h3>
-            Patient Contact detail</h3>
-        <div class="tcol" data-role="fieldcontain">
-            <label for="Address1">
-                Address line1
-            </label>
-            @Html.EditorFor(model => model.Address1)
-            @Html.ValidationMessageFor(model => model.Address1)
-            <label for="Address2">
-                Address line2
-            </label>
-            @Html.EditorFor(model => model.Address2)
-            @Html.ValidationMessageFor(model => model.Address2)
-        </div>
-        <div class="tcol" data-role="fieldcontain">
-            <label for="Country">
-                Country
-            </label>
-            @Html.EditorFor(model => model.Country)
-            @Html.ValidationMessageFor(model => model.Country)
-            <label for="State">
-                State</label>
-            @Html.EditorFor(model => model.State)
-            @Html.ValidationMessageFor(model => model.State)
-        </div>
-        <div class="tcol" data-role="fieldcontain">
-            <label for="City">
-                City
-            </label>
-            @Html.EditorFor(model => model.City)
-            @Html.ValidationMessageFor(model => model.City)
-            <label for="Zip">
-                Zip Code</label>
-            <input class="validate[required,custom[integer]] text-input" id="Zip" name="Zip" type="text" value="@Model.Zip" />
-        </div>
-        <div class="tcol" data-role="fieldcontain">
-            <label for="Phone">
-                Phone <span id="red">*</span></label>
-            <input class="validate[required,custom[phone]] text-input" id="Phone" name="Phone" type="text" value="@Model.Phone" />
-            <label for="CellPhone">
-                Cell Phone
-            </label>
-            @Html.EditorFor(model => model.CellPhone)
-            @Html.ValidationMessageFor(model => model.CellPhone)
-        </div>
-        <div class="tcol" data-role="fieldcontain">
-            <label for="Email">
-                Email<span id="red">*</span></label>
-            @Html.EditorFor(model => model.Email)
-            @Html.ValidationMessageFor(model => model.Email)
-            <label for="PagerEmail">
-                Pager Email <span id="red">*</span></label>
-            @Html.EditorFor(model => model.PagerEmail)
-            @Html.ValidationMessageFor(model => model.PagerEmail)
-        </div>*@
         </div>
         <div id="#vtabs-content-c">
             <div>
@@ -486,7 +223,7 @@
                     </div>
                     <div id="top" class="ui-grid-a">
                         <div id="ui-block-a" class="ui-block-a">
-                            Cell Phone <span id="red">*</span>
+                            Cell Phone
                         </div>
                         <div id="ui-block-b" class="ui-block-b">
                             @Html.EditorFor(model => model.CellPhone)
@@ -519,94 +256,16 @@
                         </div>
                     </div>
                 </div>
-                @*  <div class="tcol" data-role="fieldcontain">
-            <label for="LastName">
-                Last Name <span id="red">*</span></label>
-            <input id="LastName" class="validate[required] text-input" name="LastName" type="text"
-                value="" />
-            <label for="FirstName">
-                First Name <span id="red">*</span></label>
-            <input  class="validate[required] text-input" id="FirstName" name="FirstName" type="text" value="@Model.FirstName"/>
-        </div>*@ @* <div>
-           
-                Social Security
-            
-            <input class="validate[required,custom[integer]] text-input" id="SSN" name="SSN"
-                type="text" value="@Model.SSN" />
-             <label for="DOB">
-                Date Of Birth
-            </label>
-            
-
-        </div>
-        <div class="tcol" data-role="fieldcontain">
-          
-        
-        </div>
-     
-                <div data-role="fieldcontain">
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            <label for="Gender" class="ui-select">
-                                Gender</label>
-                            <select data-native-menu="false" id="Gender" name="Gender">
-                                <option value="">Select Your Gender</option>
-                                 <option value="Male">Male </option>
-			                     <option value="Female">Female </option>
-                                   
-                            </select>
-                          </div>
-                        <div class="ui-block-b">
-                          <label for="Status" class="ui-select">
-                                Status</label>
-                            <select data-native-menu="false" id="MaritalStatus" name="MaritalStatus">
-                                <option value="">Select Your Status</option>
-                                 <option value="Single">Single </option>
-			                     <option value="Married">Married </option>
-                                 <option value="Widow">Widow </option>
-                                 <option value="Widower">Widower </option>
-                                 <option value="Divorced">Divorced </option>
-                                 <option value="Seprated">Seprated </option>
-                              
-                            </select>
-                          </div> 
-                    </div>
-                </div>
-           *@
             </div>
         </div>
     </div>
     <div data-role="content" data-content-theme="d" style="text-align: right;">
-    <input type="reset" data-role="button" data-inline="true" data-theme="a" value="Reset" />
-    @* <input type="button" data-role="button" data-inline="true" data-theme="a" id="closewindow"
-        onclick="return Closechecked();" value="Close" />*@
-    <input type="Button" id="next" data-role="button" data-inline="true" data-theme="a"
-        value="Next" />
-    <input type="submit" data-role="button" data-inline="true" data-theme="a" value=" Save & Next" />
+        <input type="reset" data-role="button" data-inline="true" data-theme="a" value="Reset" />
+        <input type="Button" id="next" data-role="button" data-inline="true" data-theme="a"
+            value="Next" />
+        <input type="submit" data-role="button" data-inline="true" data-theme="a" value=" Save & Next" />
+    </div>
 </div>
-</div>
-
-</form>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#vtabs4").jVertTabs({ equalHeights: true
-        });
-
-        index = 0;
-        var count = 2;
-        //  //add click events for open tab buttons
-        $("input[id^=next]").each(function (index) {
-            $(this).click(function () {
-                if (index > count) {
-                    index = 0;
-
-                } else {
-                    $("#vtabs4").jVertTabs('selected', index);
-                    index++;
-                }
-            });
-        });
-
-    });
-</script>
+}
+@section Footer{
+}

@@ -234,7 +234,7 @@
 						// set data
 						openContentPanel.html(data);				
 						// open panel
-						openContentPanel.fadeIn(1000);				
+						openContentPanel.fadeIn("fast");				
 						// set link text back to what it originally was
 						link.text(linkText);
 						/* re-equalize heights if user specified to do so */
@@ -252,7 +252,7 @@
 				});
 			}else{
 				// no ajax request, open the panel
-				openContentPanel.fadeIn(1000);
+				openContentPanel.fadeIn("fast");
 			}
 			
 			/* see if the user provided an optional callback function to call when a tab is clicked */

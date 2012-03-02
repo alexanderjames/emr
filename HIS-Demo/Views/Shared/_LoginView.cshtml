@@ -28,44 +28,35 @@
         });
 
     });
-
+    function DisplayMsg() {
+        alert("login Success");
+    }
 </script>
- <form id="frmLogin" action="@Url.Action("Login","Home")" method="post">
- <h2>Provide Login to Continue</h2>
-        <div id="container">
-            <label for="email">
-                Email</label>
-            <input name="email" type="text" placeholder="Enter Your Email Address" />
-            <br />
-            <label for="pass">
-                Password</label>
-            <input name="pass" type="password" placeholder="Fill Your Password" />
-            
-            <div style="position:relative;float:right;">
-                <input type="submit" data-inline="true" id="btnSubmit" data-role="button" data-theme="e"
-                    value="LOG IN" />
-            </div>
-           </div>
-            <!-- /Glowform -->
-   </form>  
+@using (
+       Ajax.BeginForm("Login", "Home", new AjaxOptions()
+       {
+           UpdateTargetId = "containerLogin",
+           HttpMethod = "Post",
+           OnComplete = "DisplayMsg",
 
-
-    <style type="text/css">
-            .number
-            {
-                font-size: 30px;
-                font-weight: bold;
-                width: 50px;
-                text-align: center;
-                height: 50px;
-                vertical-align: middle;
-                position: relative;
-                float: left;
-                margin: 0px;
-                padding: 0px;
-                background-color: #003399;
-                border-radius: 50px;
-            }
-        </style>
-   
-  
+       }
+       )
+     )
+{
+    <h2>
+        Provide Login to Continue</h2>
+    <div id="container">
+        <label for="email">
+            Email</label>
+        <input name="email" type="text" placeholder="Enter Your Email Address" />
+        <br />
+        <label for="pass">
+            Password</label>
+        <input name="pass" type="password" placeholder="Fill Your Password" />
+        <div style="position: relative; float: right;">
+            <input type="submit" data-inline="true" id="btnSubmit" data-role="button" data-theme="e"
+                value="LOG IN" />
+        </div>
+    </div>
+    <!-- /Glowform -->
+}

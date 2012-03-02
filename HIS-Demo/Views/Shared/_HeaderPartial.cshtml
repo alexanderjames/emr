@@ -3,19 +3,19 @@
 <style type="text/css">
     #headerDiv
     {
-        width: 100%;
-        display: inline-block;
-        border-radius: 3px;
-        background-color: #333;
+         
+        margin:3px;
       
-        border-bottom: 5px green solid;
-        margin-top: -11px;
+     
+     display:none;
+        position:relative;
+      
     }
     #leftDiv
     {
         width: 20%;
         float: left;
-        border-right: 1px solid #0F0;
+        border-right: 1px solid #4096ee;
         text-align: center;
         padding: 0px;
         margin: 0px;
@@ -25,8 +25,9 @@
         position: relative;
         padding: 0px;
         margin: 0px;
-        width: 78%;
-        float: right;
+        width: 79%;
+        float: left;
+     
     }
     #rightDiv h2
     {
@@ -38,14 +39,44 @@
         margin: 0px;
         padding: 3px;
     }
+    #show
+    {
+        display:block;
+    }
 </style>
-<div id="headerDiv" data-role="header" data-theme="e">
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#hide").click(function () {
+            $('#headerDiv').toggle('slow');
+            $('#show').toggle('slow');
+        });
+        $("#show").click(function () {
+            $('#headerDiv').toggle('slow');
+            $('#show').toggle('slow');
+        });    
+    });
+</script>
+<div id="headerDiv" data-role="header" data-theme="a">
     <div id="leftDiv">
-        <h2>@Model.Gender</h2>
+        <ul data-role="listview" style="text-align:center;margin:5px;">
+         <li><h2>@Model.Gender</h2>
         <p>
-            @Model.DOB</p>
+            @Model.DOB</p></li>
+        </ul>
     </div>
     <div id="rightDiv">
-        <h2>@Model.LastName @Model.FirstName</h2>
+    <ul data-role="listview" style="position:relative;margin:5px;">
+         <li><h2>@Model.LastName @Model.FirstName</h2>
+      <p>@Model.PrimaryDiagnosis</p>  
+       <p> @Model.FirstName</p>  
+       <span class="ui-li-count"><a href="#" id="hide" style="padding:3px;color:Black;text-decoration:none;" >Hide</a></span>
+      </li>
+      
+     
+        </ul>
+        
+        
+           
     </div>
 </div>
+<div id="show" data-role="button" data-iconpos="right"  data-inset="true"  data-icon="grid"  data-theme="b">Show Status</div>

@@ -67,9 +67,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\GetDataRepositry.cs" />
-    <Compile Include="Models\Patient.cs" />
-    <Compile Include="Models\SearchPatients.cs" />
+    <Compile Include="obj\Models\GetDataRepositry.cs" />
+    <Compile Include="obj\Models\Patient.cs" />
+    <Compile Include="obj\Models\SearchPatients.cs" />
     <Content Include="apple-touch-icon-114x114-precomposed.png" />
     <Content Include="apple-touch-icon-57x57-precomposed.png" />
     <Content Include="apple-touch-icon-72x72-precomposed.png" />
@@ -119,38 +119,20 @@
     <Content Include="favicon.ico" />
     <Content Include="GenericErrorPage.html" />
     <Content Include="humans.txt" />
-    <Content Include="img\as.png" />
-    <Content Include="img\as1.png" />
-    <Content Include="img\conatct.jpg" />
-    <Content Include="img\DownArrow.png" />
-    <Content Include="img\final\add.png" />
-    <Content Include="img\final\am.png" />
-    <Content Include="img\final\billing.png" />
-    <Content Include="img\final\clipboard.png" />
-    <Content Include="img\final\Discharge.png" />
-    <Content Include="img\final\First.png" />
-    <Content Include="img\final\others.png" />
-    <Content Include="img\final\plus.png" />
-    <Content Include="img\final\Schedule.png" />
-    <Content Include="img\final\search.png" />
-    <Content Include="img\FirstTile.png" />
-    <Content Include="img\FirstTilesmall.png" />
-    <Content Include="img\footer.png" />
-    <Content Include="img\hc1.png" />
-    <Content Include="img\hc11.png" />
-    <Content Include="img\images\1_01.png" />
-    <Content Include="img\images\1_02.png" />
-    <Content Include="img\images\1_03.png" />
-    <Content Include="img\images\1_04.png" />
-    <Content Include="img\images\1_05.png" />
-    <Content Include="img\images\1_06.png" />
-    <Content Include="img\images\1_07.png" />
-    <Content Include="img\images\1_08.png" />
-    <Content Include="img\images\1_09.png" />
-    <Content Include="img\images\plus.png" />
-    <Content Include="img\Listp.png" />
-    <Content Include="img\logo.jpg" />
-    <Content Include="img\plus.png" />
+    <Content Include="Images\addp.jpg" />
+    <Content Include="Images\ArrowDark_2.png" />
+    <Content Include="Images\as.png" />
+    <Content Include="Images\as1.png" />
+    <Content Include="Images\conatct.jpg" />
+    <Content Include="Images\DownArrow.png" />
+    <Content Include="Images\FirstTile.png" />
+    <Content Include="Images\FirstTilesmall.png" />
+    <Content Include="Images\footer.png" />
+    <Content Include="Images\hc1.png" />
+    <Content Include="Images\hc11.png" />
+    <Content Include="Images\Listp.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\plus.png" />
     <Content Include="js\core.js" />
     <Content Include="js\formDesign\Doc.css" />
     <Content Include="js\formDesign\jquery.maskedinput-1.3.js" />
@@ -191,6 +173,10 @@
     <None Include="test\tests.js" />
     <Content Include="License.txt" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\GIndex.cshtml" />
+    <Content Include="Views\Home\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Patient\Index.cshtml" />
     <Content Include="Views\Patient\Details.cshtml" />
@@ -199,17 +185,22 @@
     <Content Include="Views\Patient\Search.cshtml" />
     <Content Include="Views\Patient\Create_old.cshtml" />
     <Content Include="Views\Shared\_PatientList.cshtml" />
-    <Content Include="Views\Home\GIndex.cshtml" />
     <Content Include="Views\PatientAdmission\Create.cshtml" />
     <Content Include="Views\PatientInsurance\Create.cshtml" />
     <Content Include="Views\PatientBilling\Create.cshtml" />
-    <Content Include="Views\PatientDischarge\Create.cshtml" />
     <Content Include="Views\Patient\Create.cshtml" />
     <Content Include="Views\Shared\_LayoutSetup.cshtml" />
     <Content Include="Views\Shared\_HeaderPartial.cshtml" />
     <Content Include="Views\Shared\_AllMenus.cshtml" />
     <Content Include="Views\Shared\_LoginView.cshtml" />
     <Content Include="Views\Shared\_GetPage.cshtml" />
+    <Content Include="Views\Shared\_Patient.cshtml" />
+    <Content Include="Views\Shared\loginInfo.cshtml" />
+    <Content Include="Views\Shared\_PagesContainer.cshtml" />
+    <Content Include="Views\Home\_About.cshtml" />
+    <Content Include="Views\Home\_ContactUs.cshtml" />
+    <Content Include="Views\Home\_privacy.cshtml" />
+    <Content Include="Views\Home\_visit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.html" />
@@ -229,7 +220,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config">

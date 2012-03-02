@@ -1,0 +1,142 @@
+﻿<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+    style="float: right; color: White; text-decoration: none;">X</a>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+       
+        
+        h3
+        {
+            border-bottom: 3px solid #008000;
+        }
+        
+        form, input, select, textarea
+        {
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        
+        div.box
+        {
+            margin: 0 auto;
+           
+            background-color: transparent;
+            position: relative;
+            top: 50px;
+            border-radius: 2px;
+        }
+        
+        div.box h1
+        {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 5px 0 5px 5px;
+             border-bottom: 3px solid #008000;
+        }
+        
+        div.box label
+        {
+            width: 100%;
+            display: block;
+            background-color: transparent;
+            padding: 10px 0 10px 0;
+        }
+        
+        div.box label span
+        {
+            display: block;
+            color: #fff;
+            font-size: 15px;
+            float: left;
+            width: 100px;
+            text-align: right;
+            padding: 5px 20px 0 0;
+        }
+        
+        div.box .input_text
+        {
+            padding: 5px 5px;
+            width: 50%;
+            background-color: transparent;
+            border-bottom: 1px double #fff;
+            border-top: 1px double #fff;
+            border-left: 1px double #fff;
+            border-right: 1px double #fff;
+        }
+        
+        div.box .message
+        {
+            padding: 7px 7px;
+            width: 350px;
+            background-color: transparent;
+            border-bottom: 1px double #fff;
+            border-top: 1px double #fff;
+            border-left: 1px double #fff;
+            border-right: 1px double #fff;
+            overflow: hidden;
+            height: 150px;
+        }
+        
+        div.box .button
+        {
+            margin: 0 0 10px 0;
+            padding: 4px 7px;
+            background-color: transparent;
+            border: 0px;
+            position: relative;
+            top: 10px;
+            left: 382px;
+            width: 100px;
+            border-bottom: 1px double #fff;
+            border-top: 1px double #fff;
+            border-left: 1px double #fff;
+            border-right: 1px double #fff;
+        }
+        
+        .left
+        {
+            width: 30%;
+            float: left;
+            border-right: 1px solid #008000;
+        }
+        .right
+        {
+            width: 65%;
+            float: left;
+        }
+    
+    </style>
+</head>
+<body>
+    <form>
+    <div class="box">
+        <h1>
+            Contact Us :</h1>
+        <label>
+            <span>Full Name</span>
+            <input type="text" class="input_text" placeholder="Fill Your Name" name="name" id="name" />
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="text" class="input_text" placeholder="Fill Your E-mail" name="email"
+                id="email" />
+        </label>
+        <label>
+            <span>Subject</span>
+            <input type="text" placeholder="Fill your Subject" class="input_text" name="subject"
+                id="subject" />
+        </label>
+        <label>
+            <span>Message</span>
+            <textarea class="message" placeholder="Write Little Message" name="feedback" id="feedback"></textarea>
+            <input type="button" class="button" value="Submit" />
+        </label>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,90 +1,135 @@
 ﻿@model HISDemo.Models.SearchPatients
-@section Header {
-    <h2>
-        Search All Patients</h2>
-    <a href="@Url.Action("Index", "Home")" data-role="button" style="float:right;" data-icon="home" data-theme="e" data-iconpos="notext">
-    </a><a href="@Url.Action("Index")" data-role="button title="ListPatients" style="float:right;" data-icon="grid" data-theme="e"  data-iconpos="notext" >
-    </a>
+@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_LayoutSetup.cshtml";
+    
 }
+@section Footer {
+}
+@section Header {
+ @Html.Partial("loginInfo")
+    <h2>
+        <a style="text-decoration: none; color: White; font-size: 20px; font-weight: normal;"
+            href="#">Search Patient(s)</a></h2>
+    <a id="HomeLink" href="#" title="@Url.Action("Index", "Home")"  data-icon="home"
+    data-theme="b" data-iconpos="notext" style="float:right;"></a>
+   
+}
+@section Script
+{
+    @Html.Partial("_Patient")
+}
+@using (Ajax.BeginForm("Search", "Patient", new AjaxOptions()
+{
+    UpdateTargetId = "Content",
+    HttpMethod = "Post",
+    OnComplete = "Send"
 
 
-    @using (Html.BeginForm())
-    {
-        @Html.ValidationSummary(true)
-      
-        <ul data-role="listview" data-inset="true" data-theme="b" data-dividertheme="a">
-            
-            <li data-theme="e">
-                <div data-role="fieldcontain">
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            @Html.LabelFor(model => model.FirstName)
-                            @Html.EditorFor(model => model.FirstName)
-                            @Html.ValidationMessageFor(model => model.FirstName)</div>
-                        <div class="ui-block-b">
-                            @Html.LabelFor(model => model.LastName)
-                            @Html.EditorFor(model => model.LastName)
-                            @Html.ValidationMessageFor(model => model.LastName)</div>
-                    </div>
-                </div>
-            </li>
-            <li data-theme="c">
-                <div data-role="fieldcontain">
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            <label for="HospitalNameValue" class="ui-select">
-                                Hospital</label>
-                            <select data-native-menu="false" id="HospitalNameValue" name="HospitalNameValue">
-                                <option value="">Select---</option>
-                                @foreach (var data in Model.HospitalName)
-                                {
-                                    <option value="@data.Value">@data.Text</option>
-                                }
-                            </select>
-                        </div>
-                        <div class="ui-block-b">
-                            <label for="HospitalistNameValue" class="ui-select">
-                                Hospitalist</label>
-                            <select data-native-menu="false" id="HospitalistNameValue" name="HospitalistNameValue">
-                                <option value="">Select---</option>
-                                @foreach (var data in Model.HospitalistName)
-                                {
-                                    <option value="@data.Value">@data.Text</option>
-                                }
-                            </select>
-                            @Html.ValidationMessageFor(model => model.HospitalistNameValue)</div>
-                    </div>
-                </div>
-            </li>
-            <li data-theme="e">
-                <div data-role="fieldcontain">
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            <label for="PCPValue" class="ui-select">
-                                PCP</label>
-                            <select data-native-menu="false" id="PCPValue" name="PCPValue">
-                                <option value="">Select---</option>
-                                @foreach (var data in Model.PCP)
-                                {
-                                    <option value="@data.Value">@data.Text</option>
-                                }
-                            </select>
-                            @Html.ValidationMessageFor(model => model.PCPValue)</div>
-                        <div class="ui-block-b">
-                            @Html.LabelFor(model => model.SearchCriteriaValue)
-                            <select data-native-menu="false" id="SearchCriteriaValue" name="SearchCriteriaValue">
-                                <option value="">Select---</option>
-                                @foreach (var data in Model.SearchCriteria)
-                                {
-                                    <option value="@data.Value">@data.Text</option>
-                                }
-                            </select>
-                            @Html.ValidationMessageFor(model => model.SearchCriteriaValue)</div>
-                    </div>
-                </div>
-            </li>
-            <li  style=" padding:35px;" >
-              <span style="float:right; margin-right:-10px; margin-top:-23px;">  <input type="submit" style="float:right" value="Search" data-inline="true" data-role="button" data-icon="search" data-iconpos="right" /></span></li>
+}, new { id = "pform" }))
+{
+
+<div id="vtabs4">
+    <div>
+        <ul>
+            <li><a href="#vtabs-content-a" id="0">&nbsp;&nbsp;SearchBy<br />
+                Demographic </a></li>
+            <li><a href="#vtabs-content-b" id="1">&nbsp;&nbsp;SearchBy<br />
+                Admission </a></li>
         </ul>
-    }
-
+    </div>
+    <div>
+        <div id="#vtabs-content-a">
+            <div id="border">
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        Last Name
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        @Html.EditorFor(model => model.LastName)
+                        @Html.ValidationMessageFor(model => model.LastName)
+                    </div>
+                </div>
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        First Name
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        @Html.EditorFor(model => model.FirstName)
+                        @Html.ValidationMessageFor(model => model.FirstName)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="#vtabs-content-b">
+            <h3>
+            </h3>
+            <div id="border">
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        Hospital
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        <select data-native-menu="false" id="HospitalNameValue" name="HospitalNameValue">
+                            <option value="">Select---</option>
+                            @foreach (var data in Model.HospitalName)
+                            {
+                                <option value="@data.Value">@data.Text</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        Hospitalist
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        <select data-native-menu="false" id="HospitalistNameValue" name="HospitalistNameValue">
+                            <option value="">Select---</option>
+                            @foreach (var data in Model.HospitalistName)
+                            {
+                                <option value="@data.Value">@data.Text</option>
+                            }
+                        </select>
+                        @Html.ValidationMessageFor(model => model.HospitalistNameValue)
+                    </div>
+                </div>
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        PCP
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        <select data-native-menu="false" id="PCPValue" name="PCPValue">
+                            <option value="">Select---</option>
+                            @foreach (var data in Model.PCP)
+                            {
+                                <option value="@data.Value">@data.Text</option>
+                            }
+                        </select>
+                        @Html.ValidationMessageFor(model => model.PCPValue)
+                    </div>
+                </div>
+                <div class="ui-grid-a" id="top">
+                    <div id="ui-block-a" class="ui-block-a">
+                        Search Criterion
+                    </div>
+                    <div id="ui-block-b" class="ui-block-b">
+                        <select data-native-menu="false" id="SearchCriteriaValue" name="SearchCriteriaValue">
+                            <option value="">Select---</option>
+                            @foreach (var data in Model.SearchCriteria)
+                            {
+                                <option value="@data.Value">@data.Text</option>
+                            }
+                        </select>
+                        @Html.ValidationMessageFor(model => model.SearchCriteriaValue)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-role="content" data-content-theme="d" style="text-align: right;">
+    <input type="button" id="next" data-role="button" data-inline="true" data-theme="a"
+        value="Next" />
+    <input type="Submit" data-role="button" data-inline="true" data-theme="a" value="Search" />
+</div>
+}

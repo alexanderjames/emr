@@ -9,33 +9,68 @@
             $(this).delay(eT).show('slow');
             eT += 200;
         });
+
+
+        $(".images li a").each(function () {
+            $(this).click(function () {
+
+                if ($(this).attr("id") == "New") {
+                    var url = $(this).attr("title");
+                    $.ajax({
+                        url: '@Url.Action("AsNewPatient", "Patient")',
+                        type: 'GET',
+                        //async: false,
+                        success: function (data) {                          
+                            window.location.href = url;
+                            return false;
+                        }
+                    });
+                }
+                else {
+                    window.location.href = $(this).attr("title");
+                    return false;
+                }
+            });
+        });
     });
+
 </script>
-<ul class="images" style="display: none;">
-    <li><a href="@Url.Action("Index", "Patient")">
-        <img src="@Url.Content("~/img/lp.jpg")" alt="Add New Patient" />
+
+
+<ul class="images" style="display: none;margin:5px;">
+    <li class="blue"><a style="color:White;" href="#" title="@Url.Action("Index", "Patient")">
+        @*<img src="@Url.Content("~/Images/lp.jpg")" alt="Add New Patient" />*@
+        Patients
     </a></li>
-    <li><a href="@Url.Action("Search", "Patient")">
-        <img src="@Url.Content("~/img/sp.jpg")" alt="Add New Patient" />
+    <li class="green"><a style="color:White;" href="#" title="@Url.Action("Search", "Patient")">
+       @* <img src="@Url.Content("~/Images/sp.jpg")" alt="Add New Patient" />*@
+       Search
     </a></li>
-    <li><a href="@Url.Action("Create", "Patient")" >
-        <img src="@Url.Content("~/img/addp.jpg")" alt="Add New Patient" />
+    <li class="red"><a style="color:White;" id="New" href="#" title="@Url.Action("Create", "Patient")" >
+       @* <img src="@Url.Content("~/Images/addp.jpg")" alt="Add New Patient" />*@
+       Add New Patient
     </a></li>
-    <li><a href="#">
-        <img src="@Url.Content("~/img/pm.jpg")" alt="Add New Patient" />
+    <li class="orange"><a href="#" style="color:White;" title="#" >
+        @*<img src="@Url.Content("~/Images/pm.jpg")" alt="Add New Patient" />*@
+        Medication
     </a></li>
-    <li><a href="#">
-        <img src="@Url.Content("~/img/pb.jpg")" alt="Add New Patient" />
+    <li class="green"><a href="#" style="color:White;" title="#">
+    Billing
+        @*<img src="@Url.Content("~/Images/pb.jpg")" alt="Add New Patient" />*@
     </a></li>
-    <li><a href="#">
-        <img src="@Url.Content("~/img/pd.jpg")" alt="Add New Patient" />
+    <li class="blue"><a href="#" style="color:White;" title="#">
+        Scheduling
+       @* <img src="@Url.Content("~/Images/pd.jpg")" alt="Add New Patient" />*@
     </a></li>
-    <li><a href="#">
-        <img src="@Url.Content("~/img/ps.jpg")" alt="Add New Patient" />
+    <li class="red"><a href="#" style="color:White;" title="#">
+    Discharge
+        @*<img src="@Url.Content("~/Images/ps.jpg")" alt="Add New Patient" />*@
     </a></li>
-    <li><a href="#">
-        <img src="@Url.Content("~/img/other.jpg")" alt="Add New Patient" />
+    <li class="orange"><a href="#" style="color:White;" title="#">
+    Other
+        @*<img src="@Url.Content("~/Images/other.jpg")" alt="Add New Patient" />*@
     </a></li>
 </ul>
+
 
 

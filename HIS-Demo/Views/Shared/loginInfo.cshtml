@@ -1,0 +1,41 @@
+﻿@if (jQueryMobileTemplate.MvcApplication.UserLogin == false)
+{
+    <style type="text/css">
+        #loginInfo
+        {
+            -moz-column-count: 2;
+            -moz-column-gap: 2px;
+            -webkit-column-gap: 2px;
+            column-count: 2;
+            column-gap: 2px;
+            float: right;
+            font-size: 14px;
+            display: inline-block;
+            margin: 13px;
+        }
+    </style>
+    <div id="loginInfo">
+        <a id="logout" href="#" title="@Url.Action("Index", "Home")"  ><span style="position: relative; float: left;
+            margin: 2px;">Welcome, Vijay Paliwal </span>
+            <img src="@Url.Content("~/Images/ArrowDark_2.png")"  alt="Logout" style="height:25px;position:relative;float:right;" title="Logout" />
+        </a>
+    </div>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#logout").click(function () {
+            var url = $(this).attr("title");
+            $.ajax({
+                url: '@Url.Action("Logout", "Home")',
+                type: 'GET',
+                //async: false,
+                success: function (data) {
+                    alert("logout Success");
+                    window.location.href = url;
+                    return false;
+                }
+            });
+
+
+        });
+    });</script>
